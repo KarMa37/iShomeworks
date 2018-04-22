@@ -1,6 +1,6 @@
 **Zadanie polega na przećwiczeniu animacji i formularzy**
 
-*** Część 1 (3 pkt)
+***Część 1 (3 pkt)***
 
 Wykonaj formularz z prostą walidacją (imitacja zapisu do lekarza).
 
@@ -13,7 +13,7 @@ Wykonaj formularz z prostą walidacją (imitacja zapisu do lekarza).
 
 Formularz powinien informować o tym co zostało źle wykonane.
 
-*** Część 2 (2 pkt)
+***Część 2 (2 pkt)***
 
 Wykonaj animacje
 * spraw by prostokąt się rozszerzał po najechnaniu na niego
