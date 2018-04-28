@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ggg;
+    display: flex;
+}
+
+input:invalid {
+    border: 1px solid red;
+    background-color: #fff0f0;
+}
+
+.registration {
+    width: 600px;
+    display: inline-block;
+    border: 2px solid #18313D;
+    border-radius: 50px;
+    margin: 50px;
+    padding: 20px;
+    background-color: #D4EFFC;
+}
+
+h1 {
+    font-family: 'Stint Ultra Expanded';
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 50px;
+}
+
+label {
+    margin: 20px;
+    font-family: 'Kaushan Script';
+    font-size: 2rem;
+    color: #18313D;
+}
+
+label, input {
+    display: flex;
+    width: 250px;
+    margin-left: 80px;
+}
+
+input, textarea {
+    margin-bottom: 50px;
+    margin-left: 80px;
+    background-color: #F0FAFF;
+}
+
+input:not(.button) {
+    height: 30px;
+    font-family: 'Stint Ultra Expanded'
+}
+
+.button {
+    display: block;
+    width: 200px;
+    padding: 12px;
+    border: 1px solid #18313D;
+    font-family: 'Stint Ultra Expanded';
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 4px;
+    background: #88bbcc;
+    background: -moz-linear-gradient(top, #88bbcc 0%, #18313D 100%);
+    background: -webkit-linear-gradient(top, #88bbcc 0%, #18313D 100%);
+    background: linear-gradient(top, #88bbcc 0%, #18313D 100%);
+    box-shadow: 2px 2px 8px 2px rgba(40, 40, 40, 0.6);
+}
+
+.button:hover {
+    background: #88bbcc;
+    background: -moz-linear-gradient(bottom, #88bbcc 0%, #18313D 100%);
+    background: -webkit-linear-gradient(bottom, #88bbcc 0%, #18313D 100%);
+    background: linear-gradient(bottom, #88bbcc 0%, #18313D 100%);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangle--1 {
+    width: 150px;
+    height: 100px;
+    background-color: #18313D;
+    margin: 50px;
+    transition-property: width;
+    transition-duration: 1500ms;
+}
+
+.rectangle--1:hover {
+    width: 300px;
+}
+
+.rectangle--2 {
+    width: 150px;
+    height: 100px;
+    background-color: #18313D;
+    margin: 50px;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scaleX(1);
+        transform-origin: 0% 0%;
+    }
+
+    50% {
+        transform: scaleX(2);
+        transform-origin: 0% 0%;
+    }
+}
+
+.rectangle--2:hover {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.spinner {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    border: 50px solid #D4EFFC;
+    border-top: 50px solid #18313D;
+    border-bottom: 50px solid #18313D;
+    border-radius: 50%;
+    animation: loader 1500ms linear infinite;
+}
+
+@keyframes loader {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.square--1 {
+    width: 200px;
+    height: 200px;
+    background-color: #18313D;
+    margin: 50px;
+    animation: spin--1 10s linear infinite;
+}
+
+@keyframes spin--1 {
+    25% {
+        background-color: #D4EFFC;
+    }
+
+    50% {
+        background-color: #18313D;
+    }
+
+    75% {
+        background-color: #D4EFFC;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: #18313D;
+    }
+}
+
+.square--2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #D4EFFC;
+    margin: 50px;
+    animation: spin--2 5s linear infinite;
+}
+
+@keyframes spin--2 {
+    50% {
+        background-color: #18313D;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: #D4EFFC;
+    }
+}
+
+.square--3 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #18313D;
+    margin: 25px;
+    animation: spin--3 2500ms linear infinite;
+}
+
+@keyframes spin--3 {
+    50% {
+        background-color: #D4EFFC;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: #18313D;
+    }
+}
