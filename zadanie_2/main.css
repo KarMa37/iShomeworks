@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ggg;
+}
+
+.navbar {
+    background-color: #18313D;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    text-align: end;
+}
+
+.navbar > ul {
+    list-style-type: none;
+    padding-right: 50px;
+    line-height: 60px;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 5px 30px;
+    margin: 20px;
+    font-family: 'Stint Ultra Expanded';
+    font-weight: 900;
+    border: 1px solid #fff;
+    border-radius: 7px;
+}
+
+.navbar a:hover {
+    opacity: .5;
+    color: #fff;
+}
+
+.brand {
+    display: flex;
+    margin: 50px 0 0 0;
+    background: #4b97bd;
+    /*background: #88bbcc;*/
+}
+
+.foto {
+    background: url(IMG.JPG) no-repeat 50%;
+    margin: 50px auto;
+    border: 3px solid #18313D;
+    border-radius: 50%;
+    padding: 250px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.name {
+    margin: 0 70px 0 0;
+    font-family: 'Kaushan Script';
+    text-shadow: 4px 4px 4px #88bbcc;
+    font-size: 3rem;
+    color: #18313D;
+}
+
+.motto {
+    margin: 0 100px 0 0;
+    font-family: 'Raleway';
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #18313D;
+}
+
+.content {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.content h2 {
+    font-family: 'Stint Ultra Expanded';
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: #18313D;
+    padding: 5px 30px;
+    margin: 70px 20px 20px 20px;
+    border-bottom: 1px solid #18313D;
+}
+
+.content p {
+    margin: 10px 70px 10px 40px;
+    font-family: 'Raleway';
+    font-size: 1.2rem;
+    color: #18313D;
+    line-height: 1.4;
+}
+
+.content article:last-child p {
+    margin-bottom: 70px;
+}
+
+footer {
+    background-color: #18313D;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+footer a {
+    transition: opacity 2s;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    opacity: .5;
+    color: #fff;
+}
