@@ -8,6 +8,7 @@ Warunki zaliczenia:
     * portfolio załamujemy 2-etapowo: 2 kol. - tablet, 1 kol. - smartphone
     * footer dwuetapowo: 2 + 1 (tylko “Follow us”) - tablet, 1 kol - smartphone
 * flexible image
+* sprawdź stronę narzędziem Google Chrome Audits
 
 Termin wykonania: **12.05.2018**
 
