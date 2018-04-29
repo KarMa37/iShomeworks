@@ -7,3 +7,4 @@
 * przed rozpoczęciem pracy pullujemy do siebie master'a
 * commitowanie na master niewskazane !
 * wykonane zadanie kończymy commitem z wiadomością: "zadanie X zrobione"
+* po terminie wykonania na kolejny zjazd mogę zostać wykonane poprawki (termin ostateczny)
