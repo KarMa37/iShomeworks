@@ -15,9 +15,11 @@ Formularz powinien informować o tym co zostało źle wykonane.
 
 ***Część 2 (2 pkt)***
 
-Wykonaj animacje
+Wykonaj animacje (wybierz 3)
 * spraw by prostokąt się rozszerzał po najechnaniu na niego
 * stwórz spinner/loader (kółko oczekiwania/wczytywania się)
 * wykonaj kwadrat, w nim kolejny mniejszy i w kolejnym jeszcze jeden - niech każdy kwadrat się kręci w różnym tempie i zmienia kolor
+* https://dribbble.com/shots/4500856-interaction
+* https://dribbble.com/shots/4504721-Simple-Loader
 
 Termin wykonania: **28.04.2018**
