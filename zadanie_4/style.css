@@ -84,7 +84,7 @@ body {
     content: url(images/scroll.png);
     position: absolute;
     left: 50%;
-    transform: translateX(-40%);
+    transform: translateX(-50%);
     bottom: 70px;
 }
 
@@ -126,6 +126,12 @@ body {
     background: #ff6033;
     color: white;
     box-shadow: 0 20px 30px rgba(255, 96, 51, 0.3);
+    cursor: pointer;
+}
+
+.section-fresh-action:hover {
+    opacity: 0.8;
+    transition: opacity .2s ease-in-out;
 }
 
 /*ABOUT*/
@@ -141,6 +147,7 @@ body {
 
 .section-about .container {
     background: url(images/background2.png) no-repeat center left #00B5B5;
+    margin-top: 13px;
     padding: 50px;
     display: flex;
     flex-direction: row-reverse;
@@ -149,11 +156,12 @@ body {
 
 .section-about .section-about-content {
     max-width: 510px;
+    padding-bottom: 50px;
 }
 
 .section-about .section-about-title {
     color: #FFFEFF;
-    opacity: 0.95;
+    opacity: 0.9;
     font-size: 90px;
     font-weight: 700;
     margin: 0 auto;
@@ -164,6 +172,92 @@ body {
     opacity: 0.9;
     font-size: 17px;
     line-height: 27px;
+}
+
+/*SERVICES*/
+
+/*#70C0FF*/
+
+.section-services {
+    background-color: #70C0FF;
+    height: 850px;
+    display: flex;
+    align-items: stretch;
+    position: relative;
+}
+
+.section-services .container {
+    background: url(images/background3.png) no-repeat center right #70C0FF;
+    display: flex;
+    align-items: center;
+}
+
+.section-services .section-services-content {
+    max-width: 500px;
+    margin-left: 50px;
+}
+
+.services-flex {
+    display: flex;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.services-flex:hover {
+    opacity: 0.9;
+    box-shadow: 0 20px 200px rgba(0, 0, 0, 0.2);
+}
+
+.section-services .section-services-pomodoro {
+    margin: 0 auto;
+    padding-left: 150px;
+}
+
+.section-services .section-services-title {
+    color: #FFFEFF;
+    opacity: 0.9;
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.section-services .section-services-text {
+    width: 300px;
+    height: 100px;
+    background-color: #FFFEFF;
+    opacity: 0.9;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+span {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-services .section-services-icon {
+    width: 100px;
+    background-color: #FFFEFF;
+    opacity: 0.9;
+    border-left: 1px solid rgba(0,0,0,0.3);
+}
+
+.cart {
+    background: url("images/icon-cart.png") no-repeat center #FFFEFF;
+}
+
+.hand {
+    background: url("images/icon-hand.png") no-repeat center #FFFEFF;
+}
+
+.world {
+    background: url("images/icon-world.png") no-repeat center #FFFEFF;
+}
+
+.carrot {
+    background: url("images/icon-carrot.png") no-repeat center #FFFEFF;
 }
 
 /*FOOTER*/
