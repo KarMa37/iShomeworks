@@ -203,6 +203,7 @@ ul.contact li a.icon-rss:before {
 }
 
 .container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -538,7 +539,7 @@ ul.contact li a.icon-rss:before {
 @media (max-width: 425px) {
 
     .container {
-        width: 80%;
+        width: 90%;
         max-width: 400px;
     }
 
@@ -575,9 +576,9 @@ ul.contact li a.icon-rss:before {
     }
 
     .button {
-        padding: 5px 10px;
+        padding: 5px;
         margin: 0 auto;
-        width: 170px;
+        width: 165px;
         display: block;
         text-align: center;
     }
@@ -589,6 +590,97 @@ ul.contact li a.icon-rss:before {
     #box1, #box2, #box3 {
         width: 100%;
         margin: 0;
+        text-align: center;
+    }
+
+    #box1, #box2 {
+        margin-bottom: 50px;
+    }
+
+    ul.contact li a:before {
+        width: 38px;
+        height: 38px;
+    }
+
+    #copyright, #page {
+        padding: 30px;
+    }
+}
+
+/*********************************************************************************/
+/*426px do 1200px - tablet*/
+/*********************************************************************************/
+
+@media (min-width: 426px) and (max-width: 1200px) {
+
+    .container {
+        width: 90%;
+        max-width: 1150px;
+    }
+
+    #menu a {
+        padding: 15px;
+    }
+
+    #menu ul {
+        padding-top: 20px;
+    }
+
+    #menu-wrapper {
+        min-height: 120px;
+    }
+
+    .title h2 {
+        text-align: center;
+    }
+
+    #sidebar, #content {
+        width: 49%;
+    }
+
+    #portfolio-wrapper {
+        padding: 50px 0;
+    }
+
+    #column1, #column2, #column3, #column4 {
+        padding: 5px;
+        margin: 0 auto;
+        width: 47%;
+        height: auto;
+    }
+
+    #column2 {
+        float: right;
+    }
+
+    .button {
+        padding: 5px;
+        margin: 0 auto;
+        width: 165px;
+        display: block;
+        text-align: center;
+    }
+
+    .button--1 {
+        margin-bottom: 50px;
+    }
+
+    #box1, #box2 {
+        width: 40%;
+        margin: 0;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    #box3 {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    #box2 {
+        float: right;
     }
 
     #box1, #box2 {
@@ -599,11 +691,6 @@ ul.contact li a.icon-rss:before {
         display: block;
         margin: 0 auto;
         text-align: center;
-    }
-
-    ul.contact li a:before {
-        width: 38px;
-        height: 38px;
     }
 
     #copyright, #page {
