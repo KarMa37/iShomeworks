@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #ggg;
+    background-color: #eee;
     display: flex;
 }
 
@@ -24,7 +24,7 @@ input:invalid {
 }
 
 h1 {
-    font-family: 'Stint Ultra Expanded';
+    font-family: 'Stint Ultra Expanded', cursive;
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: 900;
@@ -33,7 +33,7 @@ h1 {
 
 label {
     margin: 20px;
-    font-family: 'Kaushan Script';
+    font-family: 'Kaushan Script', cursive;
     font-size: 2rem;
     color: #18313D;
 }
@@ -52,7 +52,7 @@ input, textarea {
 
 input:not(.button) {
     height: 30px;
-    font-family: 'Stint Ultra Expanded'
+    font-family: 'Stint Ultra Expanded', cursive;
 }
 
 .button {
@@ -60,7 +60,7 @@ input:not(.button) {
     width: 200px;
     padding: 12px;
     border: 1px solid #18313D;
-    font-family: 'Stint Ultra Expanded';
+    font-family: 'Stint Ultra Expanded', cursive;
     font-weight: 900;
     text-transform: uppercase;
     color: #fff;
