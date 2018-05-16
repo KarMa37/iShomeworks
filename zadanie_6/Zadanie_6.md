@@ -1,3 +1,6 @@
+### :warning: Zadanie zrobione :warning: :blush:
+
+
 # GIT masters
 
 ## **termin: 17.05.2018**
