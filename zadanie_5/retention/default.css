@@ -332,7 +332,6 @@ ul.contact li a.icon-rss:before {
 #content {
     float: right;
     width: 66%;
-    `
 }
 
 /*********************************************************************************/
@@ -539,7 +538,7 @@ ul.contact li a.icon-rss:before {
 @media (max-width: 425px) {
 
     .container {
-        width: 90%;
+        width: 85%;
         max-width: 400px;
     }
 
@@ -555,7 +554,7 @@ ul.contact li a.icon-rss:before {
         padding-top: 20px;
     }
 
-    .title h2 {
+    #portfolio-wrapper .title h2 {
         text-align: center;
     }
 
@@ -571,14 +570,16 @@ ul.contact li a.icon-rss:before {
         float: none;
         padding: 10px;
         margin: 0 auto;
-        width: 80%;
+        width: 90%;
         height: auto;
     }
 
     .button {
+        box-sizing: border-box;
         padding: 5px;
+        padding-right: 10px;
         margin: 0 auto;
-        width: 165px;
+        width: 170px;
         display: block;
         text-align: center;
     }
@@ -603,19 +604,20 @@ ul.contact li a.icon-rss:before {
     }
 
     #copyright, #page {
-        padding: 30px;
+        padding: 10px;
+        margin: 0 auto;
     }
 }
 
 /*********************************************************************************/
-/*426px do 1200px - tablet*/
+/*426px do 900px - tablet*/
 /*********************************************************************************/
 
-@media (min-width: 426px) and (max-width: 1200px) {
+@media (min-width: 426px) and (max-width: 900px) {
 
     .container {
-        width: 90%;
-        max-width: 1150px;
+        width: 85%;
+        margin: 0 auto;
     }
 
     #menu a {
@@ -626,20 +628,28 @@ ul.contact li a.icon-rss:before {
         padding-top: 20px;
     }
 
+    #portfolio-wrapper .title h2 {
+        text-align: center;
+    }
+
     #menu-wrapper {
         min-height: 120px;
     }
 
-    .title h2 {
-        text-align: center;
-    }
-
     #sidebar, #content {
-        width: 49%;
+        width: 100%;
     }
 
     #portfolio-wrapper {
         padding: 50px 0;
+    }
+
+    #portfolio-wrapper h2 {
+        height: 44px;
+    }
+
+    #footer-wrapper h2 {
+        height: 44px;
     }
 
     #column1, #column2, #column3, #column4 {
@@ -653,10 +663,16 @@ ul.contact li a.icon-rss:before {
         float: right;
     }
 
+    #column3 {
+        clear: both;
+    }
+
     .button {
+        box-sizing: border-box;
         padding: 5px;
+        padding-right: 10px;
         margin: 0 auto;
-        width: 165px;
+        width: 170px;
         display: block;
         text-align: center;
     }
@@ -666,7 +682,7 @@ ul.contact li a.icon-rss:before {
     }
 
     #box1, #box2 {
-        width: 40%;
+        width: 48%;
         margin: 0;
         text-align: center;
         padding-right: 0;
@@ -698,7 +714,93 @@ ul.contact li a.icon-rss:before {
     }
 }
 
+/*********************************************************************************/
+/*901px do 1279px - small laptop | maxi tablet*/
 
+/*     (>1280px - normal)     */
+/*********************************************************************************/
 
+@media (min-width: 901px) and (max-width: 1279px) {
 
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
 
+    #portfolio-wrapper .title h2 {
+        text-align: center;
+    }
+
+    #sidebar {
+        width: 33%;
+    }
+
+    #content {
+        width: 65%;
+    }
+
+    #portfolio-wrapper {
+        padding: 50px 0;
+    }
+
+    #portfolio-wrapper h2 {
+        height: 22px;
+    }
+
+    #column1, #column2, #column3, #column4 {
+        padding: 5px;
+        margin: 0 15px;
+        width: 42%;
+        height: auto;
+    }
+
+    #column2 {
+        float: right;
+    }
+
+    #column3 {
+        clear: both;
+    }
+
+    .button {
+        box-sizing: border-box;
+        padding: 5px;
+        padding-right: 10px;
+        margin: 0 auto;
+        width: 200px;
+        display: block;
+        text-align: center;
+    }
+
+    .button--1 {
+        margin-bottom: 50px;
+    }
+
+    #box1, #box2 {
+        width: 40%;
+        text-align: center;
+        padding-right: 0;
+        margin: 0 30px 50px 30px;
+    }
+
+    #box2 {
+        float: right;
+    }
+
+    #box3 {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .contact {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #copyright {
+        padding: 30px;
+    }
+}
