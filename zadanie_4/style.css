@@ -360,6 +360,19 @@ span {
     transition: opacity .2s ease-in-out;
 }
 
+.flip:hover {
+    animation: flip-horizontal-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@keyframes flip-horizontal-bottom {
+    0% {
+        transform: rotateX(0);
+    }
+    50% {
+        transform: rotateX(-10deg);
+    }
+}
+
 /*FOOTER*/
 
 .site-footer {
