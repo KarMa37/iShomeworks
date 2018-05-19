@@ -9,6 +9,13 @@ body {
     background: url(images/background1.png) no-repeat top center #f9f8fb;
 }
 
+span {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .container {
     max-width: 1200px;
     width: 100%;
@@ -230,13 +237,6 @@ body {
     text-align: center;
 }
 
-span {
-    display: inline-block;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 .section-services .section-services-icon {
     width: 100px;
     background-color: #FFFEFF;
@@ -258,6 +258,106 @@ span {
 
 .carrot {
     background: url("images/icon-carrot.png") no-repeat center #FFFEFF;
+}
+
+/*GALLERY*/
+
+/*#FEE92E*/
+
+.section-gallery {
+    background-color: #FEE92E;
+    height: 1450px;
+    position: relative;
+}
+
+.section-gallery .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-gallery .section-gallery-title {
+    opacity: 0.9;
+    font-size: 90px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-gallery .section-gallery-text {
+    max-width: 600px;
+    opacity: 0.9;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.section-gallery-row--1 {
+    max-height: 520px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-gallery-column--1 img {
+    max-height: 520px;
+}
+
+.section-gallery-column--2 {
+    max-height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-gallery-column--2 img {
+    max-height: 250px;
+}
+
+.section-gallery-row--2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-gallery-row--2 img {
+    max-width: 590px;
+}
+
+.section-gallery .section-gallery-button {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.section-gallery .section-gallery-action {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    height: 55px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 200px;
+    border: none;
+    background: #5685A3;
+    color: white;
+    box-shadow: 0 4px 4px rgba(86, 133, 163, 0.3);
+    cursor: pointer;
+}
+
+.section-gallery-action:hover {
+    opacity: 0.8;
+    transition: opacity .2s ease-in-out;
+}
+
+.section-gallery-images img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity .2s ease-in-out;
 }
 
 /*FOOTER*/
