@@ -16,6 +16,29 @@ span {
     transform: translateY(-50%);
 }
 
+p {
+    font-size: 17px;
+    line-height: 27px;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    height: 55px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: opacity .2s ease-in-out;
+}
+
 .container {
     max-width: 1200px;
     width: 100%;
@@ -114,31 +137,14 @@ span {
 
 .section-fresh .section-fresh-text {
     margin: 30px 0;
-    font-size: 17px;
-    line-height: 27px;
     opacity: 0.9;
 }
 
 .section-fresh .section-fresh-action {
-    text-transform: uppercase;
-    font-weight: 300;
-    font-family: Raleway, sans-serif;
-    font-size: 20px;
-    height: 55px;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
     width: 200px;
-    border: none;
     background: #ff6033;
     color: white;
     box-shadow: 0 20px 30px rgba(255, 96, 51, 0.3);
-    cursor: pointer;
-}
-
-.section-fresh-action:hover {
-    opacity: 0.8;
-    transition: opacity .2s ease-in-out;
 }
 
 /*ABOUT*/
@@ -177,8 +183,6 @@ span {
 .section-about .section-about-text {
     color: #FFFEFF;
     opacity: 0.9;
-    font-size: 17px;
-    line-height: 27px;
 }
 
 /*SERVICES*/
@@ -241,7 +245,7 @@ span {
     width: 100px;
     background-color: #FFFEFF;
     opacity: 0.9;
-    border-left: 1px solid rgba(0,0,0,0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .cart {
@@ -288,8 +292,6 @@ span {
 .section-gallery .section-gallery-text {
     max-width: 600px;
     opacity: 0.9;
-    font-size: 17px;
-    line-height: 27px;
     text-align: center;
     margin: 0 auto;
     padding-top: 30px;
@@ -333,25 +335,10 @@ span {
 }
 
 .section-gallery .section-gallery-action {
-    text-transform: uppercase;
-    font-weight: 300;
-    font-family: Raleway, sans-serif;
-    font-size: 20px;
-    height: 55px;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
     width: 200px;
-    border: none;
     background: #5685A3;
     color: white;
     box-shadow: 0 4px 4px rgba(86, 133, 163, 0.3);
-    cursor: pointer;
-}
-
-.section-gallery-action:hover {
-    opacity: 0.8;
-    transition: opacity .2s ease-in-out;
 }
 
 .section-gallery-images img:hover {
@@ -401,15 +388,13 @@ span {
 
 .section-subscribe .section-subscribe-text {
     opacity: 0.8;
-    font-size: 17px;
-    line-height: 27px;
 }
 
 .section-subscribe .section-subscribe-email {
     width: 560px;
     height: 56px;
     padding-left: 20px;
-    border: solid 1px black 0.9;
+    border: solid 1px black;
 }
 
 .section-subscribe .section-subscribe-email::placeholder {
@@ -421,28 +406,12 @@ span {
 }
 
 .section-subscribe .section-subscribe-submit {
-    text-transform: uppercase;
-    font-weight: 300;
-    font-family: Raleway, sans-serif;
-    font-size: 20px;
-    height: 55px;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
     width: 175px;
-    border: none;
     background: #97BA2C;
     color: white;
     box-shadow: 0 20px 30px rgba(151, 186, 44, 0.3);
-    cursor: pointer;
     margin-left: 25px;
 }
-
-.section-subscribe-submit:hover {
-    opacity: 0.8;
-    transition: opacity .2s ease-in-out;
-}
-
 
 /*BLOG*/
 
@@ -450,7 +419,7 @@ span {
 
 .section-blog {
     background-color: #B07CF8;
-    height: 800px;
+    height: 850px;
     position: relative;
 }
 
@@ -474,8 +443,6 @@ span {
     color: #FFFEFF;
     max-width: 600px;
     opacity: 0.9;
-    font-size: 17px;
-    line-height: 27px;
     text-align: center;
     margin: 0 auto;
     padding-top: 30px;
@@ -490,6 +457,8 @@ span {
 .section-blog-images .section-blog-element {
     width: 370px;
     height: 300px;
+    box-shadow: -20px 20px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .section-blog-element--1 {
@@ -504,31 +473,71 @@ span {
     background: url(images/blog/3.jpg) no-repeat center #B07CF8;
 }
 
+.section-blog-images .section-element-date {
+    width: 60px;
+    height: 60px;
+    background: rgba(30, 30, 30, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    margin: 30px;
+}
+
+.section-blog-images .section-element-date h4 {
+    margin: 0;
+    font-size: 32px;
+    line-height: 32px;
+    opacity: 0.95;
+}
+
+.section-blog-images .section-element-date h5 {
+    margin: 0;
+    font-size: 22px;
+    line-height: 22px;
+    opacity: 0.95;
+    font-weight: 800;
+}
+
+.section-blog-images .section-element-title {
+    box-sizing: border-box;
+    width: 100%;
+    height: 55%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(
+            to top, rgba(0, 0, 0, 1) 0%,
+            rgba(255, 255, 255, 0) 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.section-blog-images .section-element-title h5 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0.95;
+}
+
+.section-blog-images .section-element-title h6 {
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
 .section-blog .section-blog-button {
     margin-top: 50px;
     text-align: center;
 }
 
 .section-blog .section-blog-action {
-    text-transform: uppercase;
-    font-weight: 300;
-    font-family: Raleway, sans-serif;
-    font-size: 20px;
-    height: 55px;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
     width: 200px;
-    border: none;
     background: #F82B3C;
     color: white;
     box-shadow: 0 20px 30px rgba(248, 43, 60, 0.3);
-    cursor: pointer;
-}
-
-.section-blog-action:hover {
-    opacity: 0.8;
-    transition: opacity .2s ease-in-out;
 }
 
 .section-blog-element:hover {
