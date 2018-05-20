@@ -443,6 +443,113 @@ span {
     transition: opacity .2s ease-in-out;
 }
 
+
+/*BLOG*/
+
+/*#B07CF8*/
+
+.section-blog {
+    background-color: #B07CF8;
+    height: 800px;
+    position: relative;
+}
+
+.section-blog .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-blog .section-blog-title {
+    color: #FFFEFF;
+    opacity: 0.9;
+    font-size: 90px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-blog .section-blog-text {
+    color: #FFFEFF;
+    max-width: 600px;
+    opacity: 0.9;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.section-blog .section-blog-images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-blog-images .section-blog-element {
+    width: 370px;
+    height: 300px;
+}
+
+.section-blog-element--1 {
+    background: url(images/blog/1.jpg) no-repeat center #B07CF8;
+}
+
+.section-blog-element--2 {
+    background: url(images/blog/2.jpg) no-repeat center #B07CF8;
+}
+
+.section-blog-element--3 {
+    background: url(images/blog/3.jpg) no-repeat center #B07CF8;
+}
+
+.section-blog .section-blog-button {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.section-blog .section-blog-action {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    height: 55px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 200px;
+    border: none;
+    background: #F82B3C;
+    color: white;
+    box-shadow: 0 20px 30px rgba(248, 43, 60, 0.3);
+    cursor: pointer;
+}
+
+.section-blog-action:hover {
+    opacity: 0.8;
+    transition: opacity .2s ease-in-out;
+}
+
+.section-blog-element:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity .2s ease-in-out;
+}
+
+.flip:hover {
+    animation: flip-horizontal-bottom 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@keyframes flip-horizontal-bottom {
+    0% {
+        transform: rotateX(0);
+    }
+    50% {
+        transform: rotateX(-10deg);
+    }
+}
+
 /*FOOTER*/
 
 .site-footer {
