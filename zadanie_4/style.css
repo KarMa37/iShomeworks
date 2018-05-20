@@ -500,7 +500,6 @@ button:hover {
 
 .section-blog-images .section-element-title {
     box-sizing: border-box;
-    width: 100%;
     height: 55%;
     position: absolute;
     bottom: 0;
@@ -508,9 +507,6 @@ button:hover {
             to top, rgba(0, 0, 0, 1) 0%,
             rgba(255, 255, 255, 0) 100%);
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 50px 20px;
 }
 
@@ -557,6 +553,97 @@ button:hover {
     50% {
         transform: rotateX(-10deg);
     }
+}
+
+/*CONTACT*/
+
+.section-contact {
+    background: url(images/background5.jpg) no-repeat center #00C4C3;
+    background-size: cover;
+    height: 950px;
+    position: relative;
+}
+
+.section-contact .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-contact .section-contact-title {
+    opacity: 0.9;
+    font-size: 90px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-contact .section-contact-text {
+    max-width: 350px;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.section-contact .section-contact-subject {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-contact .section-contact-column--1 form {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-contact .section-contact-form {
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    width: 500px;
+    background: #00C4C3;
+    padding: 18px;
+    opacity: 0.4;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.section-contact .section-contact-form:focus {
+    opacity: 1;
+    outline: none;
+    border-left: 5px solid #3477AC;
+}
+
+.section-contact .section-contact-form::placeholder {
+    color: #fff;
+    font-weight: 300;
+}
+
+.section-contact .section-contact-action {
+    width: 180px;
+    background: #3477AC;
+    color: white;
+}
+
+.section-contact .section-contact-column--2 {
+    width: 500px;
+}
+
+.section-contact .section-contact-address h6 {
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section-contact .section-contact-address p {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0.8;
 }
 
 /*FOOTER*/
