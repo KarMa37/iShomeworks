@@ -607,6 +607,10 @@ ul.contact li a.icon-rss:before {
         padding: 10px;
         margin: 0 auto;
     }
+
+    .box2 {
+        text-align: center;
+    }
 }
 
 /*********************************************************************************/
@@ -711,6 +715,10 @@ ul.contact li a.icon-rss:before {
 
     #copyright, #page {
         padding: 30px;
+    }
+
+    .box2 {
+        text-align: center;
     }
 }
 
