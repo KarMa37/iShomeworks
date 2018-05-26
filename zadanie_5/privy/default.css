@@ -515,6 +515,56 @@ input {
 /* MEDIA                                                                    */
 /*********************************************************************************/
 
+@media (min-width: 901px) and (max-width: 1199px) {
+
+    .container {
+        width: 900px;
+    }
+
+    #header {
+        float: none;
+        width: 900px;
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex;
+    }
+
+    #logo {
+        margin: 0 20px 20px;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu ul {
+        display: flex;
+    }
+
+    #menu li {
+        border-top: 0;
+        display: flex;
+    }
+
+    #menu a {
+        box-sizing: border-box;
+        position: relative;
+        width: 150px;
+        justify-content: center;
+    }
+
+    #menu li span {
+        padding: 0;
+    }
+
+    #menu .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
 @media (max-width: 900px) {
 
     .container {
@@ -642,13 +692,15 @@ input {
 }
 
 @media (max-width: 370px) {
-    input[type="checkbox"]:checked ~ label {
-        left: 280px;
-    }
-
     #main {
         width: 93%;
         padding-right: 13px;
         padding-left: 13px;
+    }
+}
+
+@media (max-width: 350px) {
+    input[type="checkbox"]:checked ~ label {
+        left: 250px;
     }
 }
