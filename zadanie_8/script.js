@@ -219,19 +219,18 @@ Część 5 Kolekcje:
     składający się z first_name i last_name.
     Output:
      [
-         {first_name: "Kaylil", last_name: "Kaylil", full_name: "Kaylil Hovey"}
-         {first_name: "Cesare", last_name: "Cesare", full_name: "Cesare Caroline"}
-         {first_name: "Xaviera", last_name: "Xaviera", full_name: "Xaviera Danilchenko"}
-         {first_name: "Shandy", last_name: "Shandy", full_name: "Shandy Sanford"}
-         {first_name: "Muire", last_name: "Muire", full_name: "Muire Pothecary"}
-         {first_name: "Mano", last_name: "Mano", full_name: "Mano Gwatkins"}
-         {first_name: "Frederica", last_name: "Frederica", full_name: "Frederica Shackleton"}
-         {first_name: "Garvey", last_name: "Garvey", full_name: "Garvey Islep"}
-         {first_name: "Aristotle", last_name: "Aristotle", full_name: "Aristotle Gozard"}
-         {first_name: "Bryon", last_name: "Bryon", full_name: "Bryon Boulder"}
-     ]
-
-5.4 Wyświetl jedynie osoby, które mają co najmniej 30 lat i są kobietami w konwencji 'imię ma X lat'
+         {id:1, first_name: "Kaylil", last_name: "Kaylil", full_name: "Kaylil Hovey"}
+         {id:2 ,first_name: "Cesare", last_name: "Cesare", full_name: "Cesare Caroline"}
+         {id:3 ,first_name: "Xaviera", last_name: "Xaviera", full_name: "Xaviera Danilchenko"}
+         {id:4 ,first_name: "Shandy", last_name: "Shandy", full_name: "Shandy Sanford"}
+         {id:5 ,first_name: "Muire", last_name: "Muire", full_name: "Muire Pothecary"}
+         {id:6 ,first_name: "Mano", last_name: "Mano", full_name: "Mano Gwatkins"}
+         {id:7 ,first_name: "Frederica", last_name: "Frederica", full_name: "Frederica Shackleton"}
+         {id:8 ,first_name: "Garvey", last_name: "Garvey", full_name: "Garvey Islep"}
+         {id:9 ,first_name: "Aristotle", last_name: "Aristotle", full_name: "Aristotle Gozard"}
+         {id:10 ,first_name: "Bryon", last_name: "Bryon", full_name: "Bryon Boulder"}
+ 5
+554 Wyświetl jedynie osoby, które mają co najmniej 30 lat i są kobietami w konwencji 'imię ma X lat'
     i na koniec wyświetl sumę ich lat.
     Output:
          Kaylil ma 33 lat
@@ -245,12 +244,23 @@ Część 5 Kolekcje:
         weight: wiek + 10
         bmi: weight / (height/100) ^ 2
     Następnie zwróc tablie imion tych osób, które mają BMI w zakresie 18,5–24,99.
-    Output: ["Kaylil", "Cesare", "Aristotle"]
+    Output: ["Kaylil", "Muire", "Aristotle", "Mano", "Bryon"]
 
  */
 
 // Kod dla części 5 poniżej:
 
+fetch('./data.json').then( r => r.json()).then(r => {
+    console.log(
+     r.map(el => ({
+        ...el,
+        height: el.age + 100,
+        weight: el.age + 10
+    })).map(el => ({
+        ...el,
+        bmi: el.weight / ((el.height/100)*(el.height/100))
+    })))
+})
 
 
 
