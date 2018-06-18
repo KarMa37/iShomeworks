@@ -6,7 +6,7 @@
 
 // Kod dla części 0 poniżej:
 
-
+console.log("Poprawnie dodany skrypt");
 
 /****************************************************************************************************
  Część 1 Tablice:
@@ -31,7 +31,23 @@
 
 // Kod dla części 1 poniżej:
 
+const myArray = [11, -10, 50, 5, -8, 9, 20, 21, -4, 11, -5, -12, 100, 20, 14, 8, 19, 44, -21, -53, 17, -21];
+// console.log(myArray);
 
+const sum = myArray.reduce((a, b) => a + b);
+console.log('1.1 Suma elementów w tablicy: ', sum);
+
+const sumAbsolute = myArray.map(Math.abs).reduce((a, b) => a + b);
+console.log('1.2 Suma wartości bezwględnych z elementów w tablicy: ', sumAbsolute);
+
+const minTwenty = myArray.filter((a) => {return a >= 20});
+console.log('1.3 Elementy większe lub równe od 20: ' + minTwenty);
+
+const sumOnlyNegative = myArray.filter((a) => {return a < 0}).reduce((a, b) => a + b);
+console.log('1.4 Suma elementów ujemnych: ', sumOnlyNegative);
+
+const sumEvenIndex = myArray.filter((a, b) => {return b % 2 === 0}).reduce((a, b) => a + b);
+console.log('1.5 Suma elementów parzystych: ', sumEvenIndex);
 
 /****************************************************************************************************
  Część 2 Pętle + funkcje:
