@@ -85,6 +85,31 @@ console.log('1.5 Suma elementów parzystych: ', sumEvenIndex);
 
 // Kod dla części 2 poniżej:
 
+const jasioObject = {name: 'Jasio', age: 8};
+const kazioObject = {name: 'Kazio', age: 11};
+
+const checkAge = (a, b) => {
+    if (a.age > b.age) {
+        return a.name
+    } else if (b.age > a.age) {
+        return b.name
+    } else {
+        return '-nobody-'
+    }
+};
+
+console.log('2.1 Starszy jest: ', checkAge(jasioObject, kazioObject));
+
+let showFizzBuzz = '';
+
+for (let i = 1; i < 51; i++) {
+    if (i % 3 === 0) {
+        showFizzBuzz += 'Fizz '
+    } else if (i % 5 === 0) {
+        showFizzBuzz += 'Buzz '
+    }
+}
+console.log('2.2: ', showFizzBuzz);
 
 
 /****************************************************************************************************
@@ -149,7 +174,6 @@ console.log('1.5 Suma elementów parzystych: ', sumEvenIndex);
  */
 
 // Kod dla części 3 poniżej:
-
 
 
 /****************************************************************************************************
