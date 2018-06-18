@@ -97,20 +97,20 @@ const checkAge = (a, b) => {
         return '-nobody-'
     }
 };
-
 console.log('2.1 Starszy jest: ', checkAge(jasioObject, kazioObject));
 
 let showFizzBuzz = '';
 
 for (let i = 1; i < 51; i++) {
-    if (i % 3 === 0) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        showFizzBuzz += 'FizzBuzz '
+    } else if (i % 3 === 0) {
         showFizzBuzz += 'Fizz '
     } else if (i % 5 === 0) {
         showFizzBuzz += 'Buzz '
     }
 }
 console.log('2.2: ', showFizzBuzz);
-
 
 /****************************************************************************************************
  Część 3 Obiekty:
