@@ -220,6 +220,25 @@ console.log(showMeTheStars);
 
 // Kod dla części 3 poniżej:
 
+const patient = {
+    name: 'name',
+    surname: 'surname',
+    status: 'status',
+    changeStatus() {
+        if (this.status === 'chory') {
+            this.status = 'zdrowy';
+        } else {
+            this.status = 'chory'
+        }
+    }
+};
+
+patient.status = 'chory';
+patient.changeStatus();
+console.log('3.1.1 patient.status: ', patient.status);
+patient.status = 'zdrowy';
+patient.changeStatus();
+console.log('3.1.2 patient.status: ', patient.status);
 
 /****************************************************************************************************
  Część 4 String:
