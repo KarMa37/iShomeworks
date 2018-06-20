@@ -99,6 +99,7 @@ const checkAge = (a, b) => {
 };
 console.log('2.1 Starszy jest: ', checkAge(jasioObject, kazioObject));
 
+
 let showFizzBuzz = '';
 
 for (let i = 1; i < 51; i++) {
@@ -111,6 +112,50 @@ for (let i = 1; i < 51; i++) {
     }
 }
 console.log('2.2: ', showFizzBuzz);
+
+
+const opeartions = (number1, operator, number2) => {
+    if (operator === '!') {
+        return 'Nie znany operator'
+    } else if (number2 === 0) {
+        return 'Nie można dzielić przez zero'
+    } else {
+        return eval(number1 + operator + number2);
+    }
+};
+
+console.log('2.3.1: ', opeartions(1, '+', 2));
+console.log('2.3.2: ', opeartions(20, '-', 3));
+console.log('2.3.3: ', opeartions(-1, '*', 8));
+console.log('2.3.4: ', opeartions(4, '/', 2));
+console.log('2.3.5: ', opeartions(5, '!', 5));
+console.log('2.3.6: ', opeartions(4, '/', 0));
+
+
+const showMeTheMoney = (sign, amount) => {
+    let string = '';
+    for (let i=1; i<Math.min(amount, 10); i++) {
+        string += sign + '-';
+    }
+    string = string + sign;
+    return string;
+};
+
+console.log('2.4:');
+console.log(showMeTheMoney('$', 5));
+console.log(showMeTheMoney('$', 17));
+
+
+let showMeTheStars = '';
+for (let i=0; i<6; i++) {
+    for (let j=0; j<i; j++) {
+        showMeTheStars += '* ';
+    }
+    showMeTheStars += "\n";
+}
+
+console.log('2.5:');
+console.log(showMeTheStars);
 
 /****************************************************************************************************
  Część 3 Obiekty:
