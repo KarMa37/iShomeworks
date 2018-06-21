@@ -232,13 +232,73 @@ const patient = {
         }
     }
 };
-
 patient.status = 'chory';
 patient.changeStatus();
 console.log('3.1.1 patient.status: ', patient.status);
 patient.status = 'zdrowy';
 patient.changeStatus();
 console.log('3.1.2 patient.status: ', patient.status);
+
+
+const phoneArray = ['IPhone 4S', 'Samsung S5', 'Huawei 5', 'LG 7'];
+let phoneObject = [];
+for (let i = 0; i < phoneArray.length; i++) {
+    phoneObject[i] = {
+        name: phoneArray[i],
+        price: Math.floor(Math.random() * 1000)
+    }
+}
+console.log('3.2:', phoneObject);
+
+
+const pizzaArray = [
+    {name: 'Margarita', price: 15, ingredients: ['ser', 'sos', 'oregano']},
+    {name: 'Roma', price: 18, ingredients: ['ser', 'sos', 'szynka', 'pieczarki']},
+    {name: 'Salami', price: 18, ingredients: ['ser', 'sos', 'salami']}
+];
+console.log('3.3:');
+for (let i = 0; i < pizzaArray.length; i++) {
+    console.log(pizzaArray[i].name + ' (' + pizzaArray[i].ingredients + ') - ' + pizzaArray[i].price);
+}
+
+
+const labirynth = {
+    animals: [
+        {name: 'Pluto', species: 'dog'},
+        {name: 'Garfield', species: 'cat'},
+        {name: 'Simba', species: 'lion'},
+        {name: 'Maniek', species: 'elephant'}
+    ],
+    nonAnimals: [
+        {name: 'R2D2', species: 'robot', skills: ['fixing', 'flying']},
+        {name: 'C3PO', species: 'robot', skills: ['talking']}
+    ],
+    showAnimals: function () {
+        console.log(this.animals)
+    },
+    showNonAnimals: function () {
+        console.log(this.nonAnimals)
+    }
+};
+console.log('3.4: a) '
+    + labirynth.animals[1].name
+    + ' b) ' + labirynth.animals[3].species
+    + ' c) ' + labirynth.nonAnimals[0].skills[1]);
+
+
+const SoftwareUsers = {
+    users: [
+        {name: '', surname: '', id: 0}
+    ],
+    add: function (name, surname) {
+        this.users.push({name: name, surname: surname, id: (this.users.length + 1)});
+    }
+};
+SoftwareUsers.users.shift();
+
+SoftwareUsers.add('Jan', 'Kowalski');
+SoftwareUsers.add('Janina', 'Kowalska');
+console.log('3.5: ', SoftwareUsers.users);
 
 /****************************************************************************************************
  Część 4 String:
