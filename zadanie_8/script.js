@@ -331,6 +331,20 @@ console.log('3.5: ', SoftwareUsers.users);
 
 // Kod dla części 4 poniżej:
 
+const uppercaseFirstLetter = (name) => {
+    if (typeof name === 'string') {
+        return '4.1.1: ' + name[0].toUpperCase() + name.slice(1);
+    } else {
+        return '4.1.2: to nie jest string';
+    }
+};
+console.log(uppercaseFirstLetter('kamil'));
+console.log(uppercaseFirstLetter(12));
+
+
+
+
+
 
 /****************************************************************************************************
  Część 5 Kolekcje:
