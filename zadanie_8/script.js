@@ -342,6 +342,14 @@ console.log(uppercaseFirstLetter('kamil'));
 console.log(uppercaseFirstLetter(12));
 
 
+const arrayWithDollars = ['K$$ami$$l', '$$Jan$ek', 'Kr$$z$ych$u', 'M$$ich$$ał$'];
+const arrayWithoutDollars = arrayWithDollars.map((i) => {return i.replace(/\$/g,'')});
+console.log('4.2: ', arrayWithoutDollars);
+
+
+const arraySurnameWithName = ['Jan Kowalski', 'Janina Kowalska', 'Kamil Stoch'];
+const arrayWithout = arraySurnameWithName.toString().split(' ');
+console.log('4.3: ', arrayWithout);
 
 
 
