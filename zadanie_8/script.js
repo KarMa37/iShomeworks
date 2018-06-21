@@ -348,10 +348,15 @@ console.log('4.2: ', arrayWithoutDollars);
 
 
 const arraySurnameWithName = ['Jan Kowalski', 'Janina Kowalska', 'Kamil Stoch'];
-const arrayWithout = arraySurnameWithName.toString().split(' ');
+const arrayWithout = arraySurnameWithName.toString().split(' ').toString().split(',');
 console.log('4.3: ', arrayWithout);
 
 
+const objectsArray = [{name: 'Jan', surname: 'Kowalski'}, {name: 'Janina', surname: 'Kowalska'}];
+for (let i=0; i<objectsArray.length; i++) {
+    objectsArray[i].fullName = objectsArray[i].name + ' ' + objectsArray[i].surname;
+}
+console.log('4.4: ', objectsArray);
 
 
 /****************************************************************************************************
