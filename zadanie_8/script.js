@@ -461,15 +461,12 @@ fetch('./data.json')
         console.log('Razem mają:', age, 'lat');
 
 
+        response.map(a => {
+            a.height = a.age + 100;
+            a.weight = a.age + 10;
+            a.bmi = (a.weight) / Math.pow((a.height) / 100, 2);
+        });
         const newCollection = response
-            .map(a => {
-                return {
-                    first_name: a.first_name,
-                    height: a.age + 100,
-                    weight: a.age + 10,
-                    bmi: (a.age + 10) / Math.pow((a.age + 100) / 100, 2)
-                }
-            })
             .filter(a => {return a.bmi > 18.5 && a.bmi < 24.99})
             .map(a => {return {first_name: a.first_name}});
         console.log('5.5: ', newCollection);
