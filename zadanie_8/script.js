@@ -40,10 +40,10 @@ console.log('1.1 Suma elementów w tablicy: ', sum);
 const sumAbsolute = myArray.map(Math.abs).reduce((a, b) => a + b);
 console.log('1.2 Suma wartości bezwględnych z elementów w tablicy: ', sumAbsolute);
 
-const minTwenty = myArray.filter((a) => {return a >= 20});
+const minTwenty = myArray.filter(a => {return a >= 20});
 console.log('1.3 Elementy większe lub równe od 20: ' + minTwenty);
 
-const sumOnlyNegative = myArray.filter((a) => {return a < 0}).reduce((a, b) => a + b);
+const sumOnlyNegative = myArray.filter(a => {return a < 0}).reduce((a, b) => a + b);
 console.log('1.4 Suma elementów ujemnych: ', sumOnlyNegative);
 
 const sumEvenIndex = myArray.filter((a, b) => {return b % 2 === 0}).reduce((a, b) => a + b);
@@ -358,7 +358,6 @@ for (let i=0; i<objectsArray.length; i++) {
 }
 console.log('4.4: ', objectsArray);
 
-
 /****************************************************************************************************
  Część 5 Kolekcje:
 
@@ -420,4 +419,27 @@ console.log('4.4: ', objectsArray);
 
 // Kod dla części 5 poniżej:
 
+fetch('./data.json')
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (response) {
+
+        const showOnlyUsersWithRace = (race) => {
+            if (typeof race !== 'string') {
+                return "taka ras nie istnieje"
+            } else {
+                return response.filter(a => {return a.race === race})
+            }
+        };
+        console.log('5.1.1: ', showOnlyUsersWithRace('Cambodian'));
+        console.log('5.1.2: ', showOnlyUsersWithRace(1));
+        console.log('5.1.3: ', showOnlyUsersWithRace('Polish'));
+
+        console.log('5.2:');
+        response.forEach(a => {console.log(a.title, a.first_name, a.last_name + ' work as ' + a.job_title + ' in ' + a.company)})
+
+
+
+    });
 
