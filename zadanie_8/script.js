@@ -398,8 +398,9 @@ console.log('4.4: ', objectsArray);
  {id:8 ,first_name: "Garvey", last_name: "Garvey", full_name: "Garvey Islep"}
  {id:9 ,first_name: "Aristotle", last_name: "Aristotle", full_name: "Aristotle Gozard"}
  {id:10 ,first_name: "Bryon", last_name: "Bryon", full_name: "Bryon Boulder"}
- 5
- 554 Wyświetl jedynie osoby, które mają co najmniej 30 lat i są kobietami w konwencji 'imię ma X lat'
+ ]
+
+ 5.4 Wyświetl jedynie osoby, które mają co najmniej 30 lat i są kobietami w konwencji 'imię ma X lat'
  i na koniec wyświetl sumę ich lat.
  Output:
  Kaylil ma 33 lat
@@ -436,8 +437,10 @@ fetch('./data.json')
         console.log('5.1.2: ', showOnlyUsersWithRace(1));
         console.log('5.1.3: ', showOnlyUsersWithRace('Polish'));
 
+
         console.log('5.2:');
         response.forEach(a => {console.log(a.title, a.first_name, a.last_name + ' work as ' + a.job_title + ' in ' + a.company)});
+
 
         const showAllWithNameAndSurname = response.map(a => {
             return {
@@ -447,7 +450,27 @@ fetch('./data.json')
                 full_name: a.first_name + ' ' + a.last_name
             }
         });
-
         console.log('5.3: ', showAllWithNameAndSurname);
-    });
 
+        console.log('5.4: ');
+        let age = 0;
+        response
+            .filter(a => {return a.gender === "Female" && a.age > 30})
+            .forEach(a => {console.log(a.first_name, 'ma', a.age, 'lat');
+                return age += a.age});
+        console.log('Razem mają:', age, 'lat');
+
+
+        const newCollection = response
+            .map(a => {
+                return {
+                    first_name: a.first_name,
+                    height: a.age + 100,
+                    weight: a.age + 10,
+                    bmi: (a.age + 10) / Math.pow((a.age + 100) / 100, 2)
+                }
+            })
+            .filter(a => {return a.bmi > 18.5 && a.bmi < 24.99})
+            .map(a => {return {first_name: a.first_name}});
+        console.log('5.5: ', newCollection);
+    });
