@@ -437,9 +437,17 @@ fetch('./data.json')
         console.log('5.1.3: ', showOnlyUsersWithRace('Polish'));
 
         console.log('5.2:');
-        response.forEach(a => {console.log(a.title, a.first_name, a.last_name + ' work as ' + a.job_title + ' in ' + a.company)})
+        response.forEach(a => {console.log(a.title, a.first_name, a.last_name + ' work as ' + a.job_title + ' in ' + a.company)});
 
+        const showAllWithNameAndSurname = response.map(a => {
+            return {
+                id: a.id,
+                first_name: a.first_name,
+                last_name: a.last_name,
+                full_name: a.first_name + ' ' + a.last_name
+            }
+        });
 
-
+        console.log('5.3: ', showAllWithNameAndSurname);
     });
 
