@@ -45,7 +45,47 @@ nie będzie uzupełniał dla każdej z nich osobnej ceny, tylko wybierze "Przesy
 To opcja głównie zapewne dla droższych przedmiotów, gdy ktoś chce oznaczyć, że przesyłka jest 'w dobrych rękach',
 więc w takim wypadku zapewne zaznaczy konkretną wybraną firmę.
 [Chociaż przy tej propozycji mocno zastanawiam się nad osobą mniej obeznaną w wystawianiu... czy nie łatwiej jest tak jak jest ;)
-A z tej już trzeciej strony.. zapewne taka osoba i tak wybrałaby po prostu 'Przesyłkę kurierską'. Takze ląduje w W :)]
+A z tej już trzeciej strony.. zapewne taka osoba i tak wybrałaby po prostu 'Przesyłkę kurierską'. Także ląduje w W :)]
+
+### Zadanie 2:
+Załączony pdf z szkicem parkometru. Nie bardzo potrafię rysować na kartce.. a w cadzie idzie jednak ciut szybciej ;)
+Temat również do obgadania z zespołem.
+
+#Uwagi:
+1. Duże i widoczne godziny i dni płatnego parkowania. Niejednokrotnie można spotkać osoby próbujące zapłacić za parking
+w weekendy ;)
+2. Duży, wyraźny ekran z podstawowymi informacjami. Ekran (oraz przyciski) w założeniu podświetlane
+z czujnikiem natężenia światła oraz czujnikiem osoby przed parkometrem.
+3. Ze względu na wprowadzane coraz częściej ograniczenia czasowe parkowania w miastach do np. 2-3h również i tutaj
+zostało to uwzględnione. Założenie: minimalny czas postoju 20min, maksymalnie 2h.
+Istnieje możliwość zmiany czasu o 5 i 20 minut.
+4. Przycisk OK również podświetlony, w założeniu z czytnikiem w stylu TouchID umożliwiającym poprzez załączoną do systemu
+appkę z podpiętą kartą (PLN, jakaś może IOTA etc.) płatność jedynie za pomocą przyciśnięcia OK.
+[ z mobiparkinegiem może być ciężko wygrać, ale projekt tyczył się jedynie samego parkometru ;) ]
+5. Jedyny 'otwór' w urządzeniu. W celu zmniejszenia ryzyka uszkodzenia przez osoby trzecie czy też warunki atm.
+możnaby było przewidzieć go jako 'ukryty' pod klapką z drukarką schowaną od góry
+(jak w urządzeniach do płatności na bezobsługowych stacjach paliw).
+6. Skrócona instrukcja obsługi jako ekran OLED z możliwością zmiany języka w górnym prawym rogu.
+7. Parkometr przewidziany jako na ciut ciut dalszą przyszłość. Patrząc na kraje skandynawskie odchodzące od płatności
+gotówkowych, wyłączyłem również i je w projekcie parkometru.
+Także płatność jedynie zbliżeniowa (karta, telefon, smart watch, opaska etc.)
+W przypadku problemów z płatnością zbliżeniową bez PINu, PIN pojawiałby się na ekraniku powyżej zamiast instrukcji.
+8. Na tylnej ścianie parkometru przewidziany duży podświetlany napis P na niebieskim tle.
+9. Ustawienie:
+- w przypadku parkingu równoległego parkometr ustawiony prostopadle do krawężnika na początku i końcu samego parkingu
+z oznaczeniem P ustawionym do najeżdżającego auta zgodnie z kierunkiem ruchu (zgodnie z draftem)
+- w przypadku parkingu prostopadłego parkometr ustawiony równolegle do krawężnika co kilka/kilkanaście miejsc parkingowych
+z oznaczeniem P ustawionym do parkującego auta
+Takie ustawienie ze względu na widoczność samego parkometru z parkującego samochodu.
+Niejednokrotnie miałem wrażenie, że parkometry są specjalnie ukrywane w miejskim gąszczu :)
+Druga sprawa to ustawienie płacącego. Płatność powinna odbywać się z chodnika a nie jezdni [ co nie zawsze
+ma miejsce w obecnych warunkach ;) ]
+
+
+
+
+
+
 
 
 
