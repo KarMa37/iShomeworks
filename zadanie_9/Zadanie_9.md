@@ -4,42 +4,32 @@ Ocena z perspektywy tylko i wyłącznie użyteczności, bez uwzględniania kwest
 Zestaw moich propozycji do obgadania z zespołem.
 
 ### M
-#### 1.
-Cały ekran wystawiania zajmuje w pionie za dużo miejsca. W części strony licząc od załączników ma za dużo 'białego pola'
+1. Cały ekran wystawiania zajmuje w pionie za dużo miejsca. W części strony licząc od załączników ma za dużo 'białego pola'
 z prawej strony (Zrzut ekranu.png). Przy tej szerokości ekranu (FullHD) możnaby było pokusić się o wrzucenie niektórych sekcji
 w 2 kolumnach (warunki oferty, opcje wystawiania, opis z podsumowania ("Podana wycena...").
-#2.
-Po kliknięciu "Wystaw przedmiot" powinno być jakieś okno podsumowujące lub przynajmniej 'ostrzeżenie',
+2. Po kliknięciu "Wystaw przedmiot" powinno być jakieś okno podsumowujące lub przynajmniej 'ostrzeżenie',
 że właśnie w tym momencie następuje wystawienie przedmiotu ;)
 
 ### S
-#### 1.
-Skoro stronka jest taka długa (nawet po skróceniu i tak taka będzie) to może jakieś menu boczne? Włącznie z odnośnikiem 'do góry'.
+1. Skoro stronka jest taka długa (nawet po skróceniu i tak taka będzie) to może jakieś menu boczne? Włącznie z odnośnikiem 'do góry'.
 Przerolkowanie całej strony zajmuje chyba ciut za dużo atencji :)
-#2.
-Po wystawieniu przedmiotu oprócz "Wystaw podobny" i "Wystaw nowy" powinna być opcja "Anuluj sprzedaż".
+2. Po wystawieniu przedmiotu oprócz "Wystaw podobny" i "Wystaw nowy" powinna być opcja "Anuluj sprzedaż".
 
 ### C
-#### 1.
-"Stopka" jest za bardzo rozbudowana. Wstawka "Na czasie" może mogłaby być skrócona? Albo po prostu bez niej w tym miejscu..?
+1. "Stopka" jest za bardzo rozbudowana. Wstawka "Na czasie" może mogłaby być skrócona? Albo po prostu bez niej w tym miejscu..?
 Wystawiając telefon do sprzedaży nie bardzo potrzebuję informacji o "Żyrafie Sophie" i "My Little Pony" ;) (Zrzut ekranu2.png)
-#2.
-Już po wystawieniu przy próbie usunięcia w opcjach powinien być bezpośredni odnośnik do "Zakończ sprzedaż",
+2. Już po wystawieniu przy próbie usunięcia w opcjach powinien być bezpośredni odnośnik do "Zakończ sprzedaż",
 a nie przez "Zmień".
 
 ### W
-#### 1.
-(To już czysto apropo wystawiania samego telefonu) "Blokada simlock" jako jedna z ważniejszych opcji wystawiania
+1. (To już czysto apropo wystawiania samego telefonu) "Blokada simlock" jako jedna z ważniejszych opcji wystawiania
 telefonu w dzisiejszych czasach? Mogę się mylić ale mam wrażenie, że z 70% telefonów na rynku jest bez blokady.
 Może wystarczająca byłaby lista rozwijalna i jednak ciut ciut niżej?
-#### 2.
-(Tutaj też czysto aporpo samego przedmiotu) Hmm.. czytnik kart pamięci w iPhonie? Chyba powinno być z automatu na 'nie' ;)
-#### 3.
-Opcje dodatkowe w stylu 'odblokowywanie za pomocą odcisku palca' i 'ładowanie indukcyjne' jako nowocześniejsze dodatki
+2. (Tutaj też czysto aporpo samego przedmiotu) Hmm.. czytnik kart pamięci w iPhonie? Chyba powinno być z automatu na 'nie' ;)
+3. Opcje dodatkowe w stylu 'odblokowywanie za pomocą odcisku palca' i 'ładowanie indukcyjne' jako nowocześniejsze dodatki
 nie powinny być może gdzieś wyżej? Nie wiem czy potencjalni kupujący wyszukują w ogóle po tych opcjach..
 Zakładam że nie, bo pewno ta opcja w wszukiwarce też jest dosyć nisko ;)
-#### 4.
-Hm.. apropo wyboru sposobu dostawy. Widzę pojawiły się opcje wyboru poszczególnych firm kurierskich. Jest ich sporo.
+4. Hm.. apropo wyboru sposobu dostawy. Widzę pojawiły się opcje wyboru poszczególnych firm kurierskich. Jest ich sporo.
 Może lepszą opcją byłaby taka w stylu "" [] Kurier (lista rozwijalna firm) "" Jeżeli ktoś wybiera kilka firm to raczej
 nie będzie uzupełniał dla każdej z nich osobnej ceny, tylko wybierze "Przesyłka kurierska" wrzucając najwyższą/uśrednioną cenę.
 To opcja głównie zapewne dla droższych przedmiotów, gdy ktoś chce oznaczyć, że przesyłka jest 'w dobrych rękach',
