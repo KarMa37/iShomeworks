@@ -81,14 +81,7 @@ Niejednokrotnie miałem wrażenie, że parkometry są specjalnie ukrywane w miej
 Druga sprawa to ustawienie płacącego. Płatność powinna odbywać się z chodnika a nie jezdni [ co nie zawsze
 ma miejsce w obecnych warunkach ;) ]
 
-
-
-
-
-
-
-
-
+---
 
 Cześć.
 
