@@ -48,7 +48,7 @@ console.log('1.4 Suma elementów ujemnych: ', sumOnlyNegative);
 
 const sumEvenIndex = myArray.filter((el, index) => {return index % 2 === 0}).reduce((prev, curr) => prev + curr);
 console.log('1.5 Suma elementów parzystych: ', sumEvenIndex);
-// TODO lepiej niż a to pisać el (łatwiej się czyta) ---- DONE :)
+// TODO lepiej niż a to pisać el (łatwiej się czyta) ----- DONE :)
 
 /****************************************************************************************************
  Część 2 Pętle + funkcje:
@@ -143,7 +143,7 @@ const showMeTheMoney = (sign, amount) => {
         string += sign + '-';
     }
     string += sign;
-    // TODO można krócej string += sign ---- DONE :)
+    // TODO można krócej string += sign ----- DONE :)
     return string;
 };
 
@@ -158,7 +158,7 @@ for (let i=0; i<6; i++) {
         showMeTheStars += '* ';
     }
     showMeTheStars += "\n";
-    // TODO bardzo ładnie :) ---- dziex :)
+    // TODO bardzo ładnie :) ----- dziex :)
 }
 
 console.log('2.5:');
@@ -265,7 +265,7 @@ const pizzaArray = [
 ];
 console.log('3.3:');
 pizzaArray.forEach(pizza => {console.log(pizza.name + ' (' + pizza.ingredients + ') - ' + pizza.price)});
-// TODO forEach ładniejszy ---- DONE :)
+// TODO forEach ładniejszy ----- DONE :)
 
 
 const labirynth = {
@@ -290,13 +290,13 @@ console.log('3.4: a) '
     + labirynth.animals[1].name
     + ' b) ' + labirynth.animals[3].species
     + ' c) ' + labirynth.nonAnimals[0].skills[1]);
-// TODO ładnie i czytelnie :) ---- dziex :)
+// TODO ładnie i czytelnie :) ----- dziex :)
 
 
 const SoftwareUsers = {
     users: [
         // {name: '', surname: '', id: 0}
-        // TODO to chyba nie potrzebne :) ---- LOL rzeczywiście :)
+        // TODO to chyba nie potrzebne :) ----- LOL rzeczywiście :)
         // TODO z początku nie chciało mi zastartować bez podania id jako 0, a toć zawsze startuje od 0 :)
         // TODO teraz to już nie wiem co na początku nachrzaniłem :P
     ],
@@ -364,7 +364,7 @@ console.log('4.3: ', arrayWithout);
 
 const objectsArray = [{name: 'Jan', surname: 'Kowalski'}, {name: 'Janina', surname: 'Kowalska'}];
 objectsArray.map(el => {el.fullName = el.name + ' ' + el.surname});
-// TODO można to zrobić mapem ---- DONE :)
+// TODO można to zrobić mapem ----- DONE :)
 console.log('4.4: ', objectsArray);
 
 /****************************************************************************************************
@@ -478,6 +478,6 @@ fetch('./data.json')
         const newCollection = response
             .filter(el => {return el.bmi > 18.5 && el.bmi < 24.99})
             .map(el => {return el.first_name});
-        // TODO miało być bez obiektu i key first_name - po prostu imie ---- DONE :)
+        // TODO miało być bez obiektu i key first_name - po prostu imie ----- DONE :)
         console.log('5.5: ', newCollection);
     });
