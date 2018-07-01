@@ -34,21 +34,22 @@ console.log("Poprawnie dodany skrypt");
 const myArray = [11, -10, 50, 5, -8, 9, 20, 21, -4, 11, -5, -12, 100, 20, 14, 8, 19, 44, -21, -53, 17, -21];
 // console.log(myArray);
 
-const sum = myArray.reduce((a, b) => a + b);
+const sum = myArray.reduce((prev, curr) => prev + curr);
 console.log('1.1 Suma elementów w tablicy: ', sum);
 
-const sumAbsolute = myArray.map(Math.abs).reduce((a, b) => a + b);
+const sumAbsolute = myArray.map(Math.abs).reduce((prev, curr) => prev + curr);
 console.log('1.2 Suma wartości bezwględnych z elementów w tablicy: ', sumAbsolute);
 
-const minTwenty = myArray.filter(a => {return a >= 20});
+const minTwenty = myArray.filter(el => {return el >= 20});
 console.log('1.3 Elementy większe lub równe od 20: ' + minTwenty);
 
-const sumOnlyNegative = myArray.filter(a => {return a < 0}).reduce((a, b) => a + b);
+const sumOnlyNegative = myArray.filter(el => {return el < 0}).reduce((prev, curr) => prev + curr);
 console.log('1.4 Suma elementów ujemnych: ', sumOnlyNegative);
 
-const sumEvenIndex = myArray.filter((a, b) => {return b % 2 === 0}).reduce((a, b) => a + b);
+const sumEvenIndex = myArray.filter((el, index) => {return index % 2 === 0}).reduce((prev, curr) => prev + curr);
 console.log('1.5 Suma elementów parzystych: ', sumEvenIndex);
-// TODO lepiej niż a to pisać el (łatwiej się czyta)
+// TODO lepiej niż a to pisać el (łatwiej się czyta) ---- DONE :)
+
 /****************************************************************************************************
  Część 2 Pętle + funkcje:
 
@@ -88,11 +89,11 @@ console.log('1.5 Suma elementów parzystych: ', sumEvenIndex);
 const jasioObject = {name: 'Jasio', age: 8};
 const kazioObject = {name: 'Kazio', age: 11};
 
-const checkAge = (a, b) => {
-    if (a.age > b.age) {
-        return a.name
-    } else if (b.age > a.age) {
-        return b.name
+const checkAge = (first, second) => {
+    if (first.age > second.age) {
+        return first.name
+    } else if (second.age > first.age) {
+        return second.name
     } else {
         return '-nobody-'
     }
@@ -111,27 +112,29 @@ for (let i = 1; i < 51; i++) {
         showFizzBuzz += 'Buzz '
     }
     // TODO na końcu nie potrzebna spacja
+    // TODO hmm.. nie wiem, może coś źle robię, ale chyba jednak potrzebna? inaczej wyświetla w 1 ciągu całość
+    // TODO chyba że miałeś na myśli tą spację za 2.2:, to ok, rzeczywiście :)
 }
-console.log('2.2: ', showFizzBuzz);
+console.log('2.2:', showFizzBuzz);
 
 
 const opeartions = (number1, operator, number2) => {
-    if (operator === '!') {
+    if (operator !== '+' && operator !== '-' && operator !== '*' && operator !== '/') {
         return 'Nie znany operator'
     } else if (number2 === 0) {
         return 'Nie można dzielić przez zero'
     } else {
-        return eval(number1 + operator + number2);
-        // TODO fajny pomysł :) co jak będzie inny opertor, np '#'
+        return eval(number1 + operator + number2)
+        // TODO fajny pomysł :) co jak będzie inny opertor, np '#' ---- DONE :)
     }
 };
 
-console.log('2.3.1: ', opeartions(1, '+', 2));
-console.log('2.3.2: ', opeartions(20, '-', 3));
-console.log('2.3.3: ', opeartions(-1, '*', 8));
-console.log('2.3.4: ', opeartions(4, '/', 2));
-console.log('2.3.5: ', opeartions(5, '!', 5));
-console.log('2.3.6: ', opeartions(4, '/', 0));
+console.log('2.3.1:', opeartions(1, '+', 2));
+console.log('2.3.2:', opeartions(20, '-', 3));
+console.log('2.3.3:', opeartions(-1, '*', 8));
+console.log('2.3.4:', opeartions(4, '/', 2));
+console.log('2.3.5:', opeartions(5, '!', 5));
+console.log('2.3.6:', opeartions(4, '/', 0));
 
 
 const showMeTheMoney = (sign, amount) => {
@@ -139,8 +142,8 @@ const showMeTheMoney = (sign, amount) => {
     for (let i=1; i<Math.min(amount, 10); i++) {
         string += sign + '-';
     }
-    string = string + sign;
-    // TODO można krócej string += sign
+    string += sign;
+    // TODO można krócej string += sign ---- DONE :)
     return string;
 };
 
@@ -155,7 +158,7 @@ for (let i=0; i<6; i++) {
         showMeTheStars += '* ';
     }
     showMeTheStars += "\n";
-    // TODO bardzo ładnie :)
+    // TODO bardzo ładnie :) ---- dziex :)
 }
 
 console.log('2.5:');
@@ -261,10 +264,8 @@ const pizzaArray = [
     {name: 'Salami', price: 18, ingredients: ['ser', 'sos', 'salami']}
 ];
 console.log('3.3:');
-for (let i = 0; i < pizzaArray.length; i++) {
-    console.log(pizzaArray[i].name + ' (' + pizzaArray[i].ingredients + ') - ' + pizzaArray[i].price);
-}
-// TODO forEach ładniejszy
+pizzaArray.forEach(pizza => {console.log(pizza.name + ' (' + pizza.ingredients + ') - ' + pizza.price)});
+// TODO forEach ładniejszy ---- DONE :)
 
 
 const labirynth = {
@@ -289,12 +290,15 @@ console.log('3.4: a) '
     + labirynth.animals[1].name
     + ' b) ' + labirynth.animals[3].species
     + ' c) ' + labirynth.nonAnimals[0].skills[1]);
-// TODO ładnie i czytelnie :)
+// TODO ładnie i czytelnie :) ---- dziex :)
 
 
 const SoftwareUsers = {
     users: [
-        {name: '', surname: '', id: 0} // TODO to chyba nie potrzebne :)
+        // {name: '', surname: '', id: 0}
+        // TODO to chyba nie potrzebne :) ---- LOL rzeczywiście :)
+        // TODO z początku nie chciało mi zastartować bez podania id jako 0, a toć zawsze startuje od 0 :)
+        // TODO teraz to już nie wiem co na początku nachrzaniłem :P
     ],
     add: function (name, surname) {
         this.users.push({name: name, surname: surname, id: (this.users.length + 1)});
@@ -359,10 +363,8 @@ console.log('4.3: ', arrayWithout);
 
 
 const objectsArray = [{name: 'Jan', surname: 'Kowalski'}, {name: 'Janina', surname: 'Kowalska'}];
-for (let i=0; i<objectsArray.length; i++) {
-    objectsArray[i].fullName = objectsArray[i].name + ' ' + objectsArray[i].surname;
-}
-// TODO można to zrobić mapem
+objectsArray.map(el => {el.fullName = el.name + ' ' + el.surname});
+// TODO można to zrobić mapem ---- DONE :)
 console.log('4.4: ', objectsArray);
 
 /****************************************************************************************************
@@ -437,7 +439,7 @@ fetch('./data.json')
             if (typeof race !== 'string') {
                 return "taka ras nie istnieje"
             } else {
-                return response.filter(a => {return a.race === race})
+                return response.filter(el => {return el.race === race})
             }
         };
         console.log('5.1.1: ', showOnlyUsersWithRace('Cambodian'));
@@ -446,15 +448,15 @@ fetch('./data.json')
 
 
         console.log('5.2:');
-        response.forEach(a => {console.log(a.title, a.first_name, a.last_name + ' work as ' + a.job_title + ' in ' + a.company)});
+        response.forEach(el => {console.log(el.title, el.first_name, el.last_name + ' work as ' + el.job_title + ' in ' + el.company)});
 
 
-        const showAllWithNameAndSurname = response.map(a => {
+        const showAllWithNameAndSurname = response.map(el => {
             return {
-                id: a.id,
-                first_name: a.first_name,
-                last_name: a.last_name,
-                full_name: a.first_name + ' ' + a.last_name
+                id: el.id,
+                first_name: el.first_name,
+                last_name: el.last_name,
+                full_name: el.first_name + ' ' + el.last_name
             }
         });
         console.log('5.3: ', showAllWithNameAndSurname);
@@ -462,20 +464,20 @@ fetch('./data.json')
         console.log('5.4: ');
         let age = 0;
         response
-            .filter(a => {return a.gender === "Female" && a.age > 30})
-            .forEach(a => {console.log(a.first_name, 'ma', a.age, 'lat');
-                return age += a.age});
+            .filter(el => {return el.gender === "Female" && el.age > 30})
+            .forEach(el => {console.log(el.first_name, 'ma', el.age, 'lat');
+                return age += el.age});
         console.log('Razem mają:', age, 'lat');
 
 
-        response.map(a => {
-            a.height = a.age + 100;
-            a.weight = a.age + 10;
-            a.bmi = (a.weight) / Math.pow((a.height) / 100, 2);
+        response.map(el => {
+            el.height = el.age + 100;
+            el.weight = el.age + 10;
+            el.bmi = (el.weight) / Math.pow((el.height) / 100, 2);
         });
         const newCollection = response
-            .filter(a => {return a.bmi > 18.5 && a.bmi < 24.99})
-            .map(a => {return {first_name: a.first_name}});
-        // TODO miało być bez obiektu i key first_name - po prostu imie
+            .filter(el => {return el.bmi > 18.5 && el.bmi < 24.99})
+            .map(el => {return el.first_name});
+        // TODO miało być bez obiektu i key first_name - po prostu imie ---- DONE :)
         console.log('5.5: ', newCollection);
     });
