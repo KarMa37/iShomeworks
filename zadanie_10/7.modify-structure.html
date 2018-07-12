@@ -20,10 +20,14 @@
 <script type="text/javascript">
 
     $(function () {
-
+        $('#button1').click(function () {
+            $('p').after('<a href="http://www.google.com/" target="_blank" style="display: block">GOOGLE</a>');
+            // window.location = "http://www.google.com/";
+        });
     });
     /*
-    Po kliknięciu przycisku, wstaw link do strony google.com pomiędzy obecnymi już elementami <p> oraz <button>
+    Po kliknięciu przycisku, wstaw link do strony google.com
+    pomiędzy obecnymi już elementami <p> oraz <button>
      */
 </script>
 </body>
