@@ -57,13 +57,22 @@
     </tr>
 </table>
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <script type="text/javascript">
+
+    $(function () {
+        let rowCountWithHeader = $('#table1 tr').length;
+        let rowCountWithoutHeader = $('#table1 tr td:first-child').length;
+        let columnCount = $("#table1 tr th").length;
+        console.log('Liczba wierszy z nagłówkiem:',rowCountWithHeader);
+        console.log('Liczba wierszy bez nagłówka:',rowCountWithoutHeader);
+        console.log('Liczba kolumn:',columnCount);
+    });
+
     /*
     Za pomocą jQuery policz wiersze i kolumny i wyświetl ich liczbę w konsoli.
      */
-
-
 </script>
 </body>
 </html>

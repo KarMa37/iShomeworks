@@ -7,12 +7,19 @@
 <body>
 <p>Zajęcia w <span class="blink">infoShare Academy</span>.</p>
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <script type="text/javascript">
+
+    $(function () {
+        setInterval(function () {
+            $('.blink').fadeIn(500).fadeOut(500);
+        }, 0);
+    });
+
     /*
     Spraw, aby tekst w span.class mrugał (znikał przez 0.5s i pokazywał się przez 0,5s) w nieskończoność
      */
-
 
 </script>
 </body>

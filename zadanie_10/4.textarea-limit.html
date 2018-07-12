@@ -5,8 +5,8 @@
     <title>4.textarea-limit</title>
     <style type="text/css">
         textarea {
-            display:block;
-            margin:1em 0;
+            display: block;
+            margin: 1em 0;
         }
     </style>
 </head>
@@ -17,12 +17,23 @@
     <span id="rchars">15</span> Character(s) Remaining
 </form>
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <script type="text/javascript">
-    /*
-     Ogranicz liczbę znaków możliwych do wpisania w textarea. Po każdym postawionym znaku aktualizuj informację o liczbie pozostałych znaków do użycia
-     */
 
+    $(function () {
+        let maxLength = 15;
+        $('#textarea').attr('maxlength', maxLength);
+        $('#textarea').keyup(function () {
+            let length = maxLength - $(this).val().length;
+            $('#rchars').text(length);
+        });
+    });
+
+    /*
+     Ogranicz liczbę znaków możliwych do wpisania w textarea.
+     Po każdym postawionym znaku aktualizuj informację o liczbie pozostałych znaków do użycia
+     */
 
 </script>
 </body>
