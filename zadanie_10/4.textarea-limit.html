@@ -25,6 +25,7 @@
         let maxLength = 15;
         $('#textarea').attr('maxlength', maxLength);
         $('#textarea').keyup(function () {
+            //TODO lepiej chyba keydown - jak nie podniose klawisza to się aktualizuje oraz można ustawić max za pomocą jQ
             let length = maxLength - $(this).val().length;
             $('#rchars').text(length);
         });
