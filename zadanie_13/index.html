@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="parent">
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+    <div id="box3">box3</div>
+</div>
+<button id="btn" class="button">button</button>
+
+<script type="text/javascript">
+
+    //HTML DOM JS
+
+    function modifyText() {
+        var el = document.getElementById("box2");
+        el.parentElement.children.innerHTML = "true box";
+    }
+
+    function addNewDiv() {
+        var el = document.getElementsByTagName(div)[1];
+        var div = document.createElement("div");
+        div.text = "box4";
+        el.appendChild(div)
+    }
+
+    document.getElementById(btn).addEventListener("click", modifyText());
+    document.getElementById(btn).addEventListener("double click", addNewDiv());
+
+    document.getElementsByClassName("button").innerHTML = "true btn";
+    document.querySelectorAll("button").innerHTML = "really true btn";
+
+    document.getElementById(box3).className.add("some class");
+    document.getElementById(btn).className.remove("button")
+    document.getElementById(box1).parentElement.lastElementChild('style').backgroundColor = "black";
+
+    //ES6
+
+    class SomeClass {
+        name: "Some class",
+        method() => {
+            alert(this.name);
+        }
+    }
+
+    var myClass = SomeClass();
+    myClass.method();
+
+    const sayHi = name,surname => alert('Hi {name} {surname}!');
+
+    sayHi('Jan', 'Kowalski');
+
+    sayHi = name,surname => console.error('Hi {name} {surname}!');
+
+    class newClass extends SomeClass {
+        sayByeByeToOldClass = () => {
+            alert(`Bye bye {this.oldName}!`)
+        }
+    }
+
+    let newClass = newClass();
+    newClass.sayByeByeToOldClass();
+
+
+
+</script>
+</body>
+</html>
