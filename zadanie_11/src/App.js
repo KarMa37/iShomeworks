@@ -14,6 +14,12 @@ class App extends Component {
                 </tr>
                 </thead>
                 <tbody>
+                {Players.map(player => {
+                    return <tr key={player.id}>
+                        <td>{player.username}</td>
+                        <td>{player.points}</td>
+                    </tr>
+                })}
                 </tbody>
             </table>
         </Fragment>
