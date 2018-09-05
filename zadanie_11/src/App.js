@@ -3,10 +3,11 @@ import './App.css';
 import Players from './players';
 
 class App extends Component {
+
     render() {
         return <Fragment>
-            <h1>Players</h1>
-            <table>
+            <h1 className="center">Players</h1>
+            <table className="center">
                 <thead>
                 <tr>
                     <th>Username</th>
