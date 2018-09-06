@@ -20,7 +20,7 @@ class App extends Component {
                 </thead>
                 <tbody>
                 {Players.map(player => {
-                    return <tr key={player.id}>
+                    return <tr className={player.points>100 ? 'highlightingColor' : ''} key={player.id}>
                         <td>{player.username}</td>
                         <td>{player.points}</td>
                     </tr>
