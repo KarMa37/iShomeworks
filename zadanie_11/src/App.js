@@ -5,6 +5,7 @@ import Players from './players';
 class App extends Component {
 
     render() {
+
         return <Fragment>
             <h1 className="center">Players</h1>
             <table className="center">
@@ -21,6 +22,12 @@ class App extends Component {
                         <td>{player.points}</td>
                     </tr>
                 })}
+                <tr>
+                    <th>Total</th>
+                    <th>{Players.reduce((prev, next) => {
+                        return prev + next.points
+                    }, 0)}</th>
+                </tr>
                 </tbody>
             </table>
         </Fragment>
