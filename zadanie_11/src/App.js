@@ -5,7 +5,10 @@ import Players from './players';
 class App extends Component {
 
     render() {
-
+        const arrayId = Players.map(player => {
+            return player.id
+        });
+        const maxId = Math.max(...arrayId);
         return <Fragment>
             <h1 className="center">Players</h1>
             <table className="center">
@@ -27,6 +30,12 @@ class App extends Component {
                     <th>{Players.reduce((prev, next) => {
                         return prev + next.points
                     }, 0)}</th>
+                </tr>
+                <tr>
+                    <th>Average</th>
+                    <th>{Players.reduce((prev, next) => {
+                        return prev + next.points
+                    }, 0) / maxId}</th>
                 </tr>
                 </tbody>
             </table>
