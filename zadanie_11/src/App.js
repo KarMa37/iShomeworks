@@ -20,6 +20,12 @@ class App extends Component {
         })
     };
 
+    clearColor = () => {
+        this.setState({
+            highlightingColor: ""
+        })
+    };
+
     render() {
         const arrayId = Players.map(player => {
             return player.id
@@ -30,6 +36,7 @@ class App extends Component {
             <div className="center">
                 <button className="red" onClick={this.redColor}>Red</button>
                 <button className="blue" onClick={this.blueColor}>Blue</button>
+                <button onClick={this.clearColor}>Clear</button>
             </div>
             <table className="center">
                 <thead>
