@@ -5,7 +5,19 @@ import Players from './players';
 class App extends Component {
 
     state = {
-        highlightingColor: "red"
+        highlightingColor: ""
+    };
+
+    redColor = () => {
+        this.setState({
+            highlightingColor: "red"
+        })
+    };
+
+    blueColor = () => {
+        this.setState({
+            highlightingColor: "blue"
+        })
     };
 
     render() {
@@ -15,6 +27,10 @@ class App extends Component {
         const maxId = Math.max(...arrayId);
         return <Fragment>
             <h1 className="center">Players</h1>
+            <div className="center">
+                <button className="red" onClick={this.redColor}>Red</button>
+                <button className="blue" onClick={this.blueColor}>Blue</button>
+            </div>
             <table className="center">
                 <thead>
                 <tr>
