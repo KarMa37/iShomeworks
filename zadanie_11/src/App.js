@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import './App.css';
-import Players from './players';
+import Players from './players.json';
 
 class App extends Component {
 
