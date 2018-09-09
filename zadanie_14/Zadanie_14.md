@@ -16,7 +16,8 @@ Termin wykonania: **23.09.2018**
 
 ### Część 2 - refaktoryzacja
 
-   Stwórz nowy komponent `Players`, w którym stworzymy identyczną tablicę (pamiętaj o folderze i `index.js` z domyślny eksportem).
+   Stwórz nowy komponent `Players`, w którym stworzymy identyczną tablicę (pamiętaj o folderze i `index.js` z domyślny eksportem). 
+   Stan z zapisanym kolorem wyróżnienia powinien być też przeniesiony do tego komponentu.
    
    Zaimplementuj nowo uwtorzony komponent w `App.js` (pamiętaj o imporcie) i przekaż mu dane poprzez `props` (`<Players players={this.state.players}/>`).
    Przekazne dane zapisz do stanu komponentu Players.
@@ -27,7 +28,8 @@ Termin wykonania: **23.09.2018**
 
    Stwórz nowy komponent `PlayerRow`, w którym wyłączymy tworzenie wiersza naszej tablicy. (w funkcji render powinien być zwracany tag `<tr>`).
    
-   Zaimplementuj nowo uwtorzony komponent w `Players.js` (pamiętaj o imporcie) i przekaż mu dane do wyświetlenia poprzez `props` (`<PlayerRow player={player} />`).
+   Zaimplementuj nowo uwtorzony komponent w `Players.js` (pamiętaj o imporcie) i przekaż mu dane do wyświetlenia oraz inforamcje o koloru wyróżnienia
+   poprzez `props` (`<PlayerRow player={player} highlightColor={this.state.highlightColor />`).
    
    W tym przypadku będziemy przekazywać dane tylko jednego playera podczas wykonywania pętli:
    
@@ -80,6 +82,6 @@ Termin wykonania: **23.09.2018**
 ### Cześć 7 - refaktoryzacja ciąg dalszy
 
    Wyciągnij formularz do nowego komponentu `PlayerForm`. 
-   Przenieś logikę usuwania / dodawania do `App.js` (poziom wyżej).
-   Zmień komponenty, które nie potrzebują stanu aplikacji na zwykłe funkcje zamiast class. (PlayerRow).
+   Przenieś logikę usuwania / dodawania do `App.js` (poziom wyżej, tak by stan był zmieniany w jednym miejscu).
+   Zmień komponenty, które nie potrzebują stanu aplikacji na zwykłe funkcje zamiast class. (Players, PlayerRow).
    
