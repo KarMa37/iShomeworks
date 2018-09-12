@@ -34,12 +34,12 @@ console.log('petSurgeon',        petSurgeon.getFullName(),        "--- YOUR ANSW
 var PLASTIC_BAG_CAPACITY = 3500;
 
 // AD 1 - zaimplementuje function constructor dla produktów
-var watermelon = new Fruit(1, 12.90, 1500);
-var apple = new Fruit(2, 1.90, 200);
-var cheese = new Dairy(3, 2.39, 100);
-var milk = new Dairy(4, 3.19, 1000);
-var balticCod = new Fish(5, 2.28, 100);
-var salmon = new Fish(6, 3.28, 100);
+var watermelon = new Fruit(12.90, 1500);
+var apple = new Fruit(1.90, 200);
+var cheese = new Dairy(2.39, 100);
+var milk = new Dairy(3.19, 1000);
+var balticCod = new Fish(2.28, 100);
+var salmon = new Fish(3.28, 100);
 
 // AD 2 - zaimplementuje function constructor dla shoppingCart
 var shoppingCart = new ShoppingCart();
