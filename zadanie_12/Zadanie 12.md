@@ -16,6 +16,6 @@ Tips:
  
 Punktacja: 1 część to 0,5pkt - maks 3pkt.
 
-Termin wykonania: **16.09.2018**
+Termin wykonania: **23.09.2018**
 
 

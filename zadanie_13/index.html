@@ -17,55 +17,60 @@
     //HTML DOM JS
 
     function modifyText() {
-        var el = document.getElementById("box2");
-        el.parentElement.children.innerHTML = "true box";
+        const el = document.getElementById("box2");
+        el.innerHTML = "true box";
     }
 
     function addNewDiv() {
-        var el = document.getElementsByTagName(div)[1];
-        var div = document.createElement("div");
-        div.text = "box4";
-        el.appendChild(div)
+        const el = document.getElementsByTagName("div")[3];
+        const div = document.createElement("div");
+        div.innerHTML = "box4";
+        el.appendChild(div);
     }
 
-    document.getElementById(btn).addEventListener("click", modifyText());
-    document.getElementById(btn).addEventListener("double click", addNewDiv());
+    document.getElementById("btn").addEventListener("click", modifyText);
+    document.getElementById("btn").addEventListener("dblclick", addNewDiv);
 
     document.getElementsByClassName("button").innerHTML = "true btn";
     document.querySelectorAll("button").innerHTML = "really true btn";
 
-    document.getElementById(box3).className.add("some class");
-    document.getElementById(btn).className.remove("button")
-    document.getElementById(box1).parentElement.lastElementChild('style').backgroundColor = "black";
+    document.getElementById("box3").classList.add("someClass");
+    document.getElementById("btn").classList.remove("button");
+    document.getElementById("box3").style.backgroundColor = "green";
 
     //ES6
 
     class SomeClass {
-        name: "Some class",
-        method() => {
-            alert(this.name);
+        constructor() {
+            this.name = "Some class"
+        }
+
+        method() {
+            alert(this.name)
         }
     }
 
-    var myClass = SomeClass();
+    let myClass = new SomeClass();
     myClass.method();
 
-    const sayHi = name,surname => alert('Hi {name} {surname}!');
+    let sayHi = (name, surname) => {
+        return alert(`Hi ${name} ${surname}!`);
+    };
 
     sayHi('Jan', 'Kowalski');
 
-    sayHi = name,surname => console.error('Hi {name} {surname}!');
+    sayHi = (name, surname) => {
+        return console.error(`Hi ${name} ${surname}!`);
+    };
 
     class newClass extends SomeClass {
-        sayByeByeToOldClass = () => {
-            alert(`Bye bye {this.oldName}!`)
+        sayByeByeToOldClass() {
+            alert(`Bye bye ${this.name}!`)
         }
     }
 
-    let newClass = newClass();
-    newClass.sayByeByeToOldClass();
-
-
+    let newClass2 = new newClass();
+    newClass2.sayByeByeToOldClass();
 
 </script>
 </body>

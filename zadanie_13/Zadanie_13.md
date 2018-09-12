@@ -6,6 +6,6 @@ Popraw dany kod tak by konsola nie pokazywała żadnych błędów.
 
 Punktacja: 2pkt.
 
-Termin wykonania: **16.09.2018**
+Termin wykonania: **23.09.2018**
 
 
