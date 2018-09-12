@@ -3,7 +3,7 @@
 Zadanie podzielono na 6 części (opis każdej poniżej).
 
 Do danego pliku skryptu nalezy zaimplementować produkty za pomocą *Function constructor* oraz koszyk udostępniający metody: 
- * addProduct(id, price, weight)
+ * addProduct(price, weight)
  * isEnoughMoney(amount)
  * containFish
  * getTotalPrice
