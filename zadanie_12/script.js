@@ -3,7 +3,7 @@
 let person = {
     name: "John",
     surname: "Doe",
-    getFullName: function() {
+    getFullName: function () {
         return this.name + ' ' + this.surname;
     }
 };
@@ -11,7 +11,7 @@ let doctor = Object.create(person);
 let journalist = Object.create(person);
 let surgeon = Object.create(doctor);
 let remodelingSurgeon = Object.create(surgeon);
-remodelingSurgeon.getFullName = function() {
+remodelingSurgeon.getFullName = function () {
     return "Unknown"
 };
 let petSurgeon = Object.create(surgeon);
@@ -21,12 +21,12 @@ Object.getPrototypeOf(doctor).surname = "Fox";
 Object.getPrototypeOf(journalist).surname = "Parker";
 Object.getPrototypeOf(Object.getPrototypeOf(petSurgeon)).surname = "Hide";
 // Try to guess results
-console.log('person',            person.getFullName(),            "John Parker");
-console.log('doctor',            doctor.getFullName(),            "John Fox");
-console.log('journalist',        journalist.getFullName(),        "John Parker");
-console.log('surgeon',           surgeon.getFullName(),           "Dana Fox");
+console.log('person', person.getFullName(), "John Parker");
+console.log('doctor', doctor.getFullName(), "John Fox");
+console.log('journalist', journalist.getFullName(), "John Parker");
+console.log('surgeon', surgeon.getFullName(), "Dana Fox");
 console.log('remodelingSurgeon', remodelingSurgeon.getFullName(), "Unknown");
-console.log('petSurgeon',        petSurgeon.getFullName(),        "Dana Hide");
+console.log('petSurgeon', petSurgeon.getFullName(), "Dana Hide");
 
 
 // let's code!
@@ -34,6 +34,21 @@ console.log('petSurgeon',        petSurgeon.getFullName(),        "Dana Hide");
 let PLASTIC_BAG_CAPACITY = 3500;
 
 // AD 1 - zaimplementuj function constructor dla produktów
+function Fruit(price, weight) {
+    this.price = price;
+    this.weight = weight;
+}
+
+function Dairy(price, weight) {
+    this.price = price;
+    this.weight = weight;
+}
+
+function Fish(price, weight) {
+    this.price = price;
+    this.weight = weight;
+}
+
 let watermelon = new Fruit(12.90, 1500);
 let apple = new Fruit(1.90, 200);
 let cheese = new Dairy(2.39, 100);
