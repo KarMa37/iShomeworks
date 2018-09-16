@@ -1,0 +1,14 @@
+.center {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
