@@ -25,10 +25,6 @@ class Players extends Component {
     };
 
     render() {
-        const arrayId = this.props.players.map(player => {
-            return player.id
-        });
-        const maxId = Math.max(...arrayId);
         return <Fragment>
             <h1 className="center">Players</h1>
             <div className="center">
@@ -60,7 +56,7 @@ class Players extends Component {
                     <th>Average</th>
                     <th>{this.props.players.reduce((prev, next) => {
                         return prev + next.points
-                    }, 0) / maxId}</th>
+                    }, 0) / this.props.players.length}</th>
                 </tr>
                 </tbody>
             </table>
