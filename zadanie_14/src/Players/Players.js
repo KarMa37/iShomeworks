@@ -1,4 +1,5 @@
 import React, {Component, Fragment} from 'react';
+import PlayerRow from './PlayerRow';
 
 class Players extends Component {
 
@@ -41,11 +42,11 @@ class Players extends Component {
                 </thead>
                 <tbody>
                 {this.props.players.map(player => {
-                    return <tr className={player.points > 100 ? this.state.highlightingColor : ''} key={player.id}>
-                        <td>{player.username}</td>
-                        <td>{player.points}</td>
-                    </tr>
+                    return <PlayerRow player={player}
+                                      className={player.points > 100 ? this.state.highlightingColor : ''}
+                                      key={player.id}/>
                 })}
+
                 <tr>
                     <th>Total</th>
                     <th>{this.props.players.reduce((prev, next) => {
