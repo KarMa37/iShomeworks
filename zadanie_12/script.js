@@ -50,12 +50,12 @@ function Fish(price, weight) {
 }
 
 // AD 1 - zaimplementuje function constructor dla produktów
-var watermelon = new Fruit(12.90, 1500);
-var apple = new Fruit(1.90, 200);
-var cheese = new Dairy(2.39, 100);
-var milk = new Dairy(3.19, 1000);
-var balticCod = new Fish(2.28, 100);
-var salmon = new Fish(3.28, 100);
+let watermelon = new Fruit(12.90, 1500);
+let apple = new Fruit(1.90, 200);
+let cheese = new Dairy(2.39, 100);
+let milk = new Dairy(3.19, 1000);
+let balticCod = new Fish(2.28, 100);
+let salmon = new Fish(3.28, 100);
 
 // AD 2 - zaimplementuj function constructor dla shoppingCart
 function ShoppingCart() {
