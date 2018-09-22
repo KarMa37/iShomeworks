@@ -62,6 +62,12 @@ function ShoppingCart() {
     this.addProduct = function (element, quantity) {
         this.elements.push({element, quantity});
     };
+    this.isEnoughMoney = function (amount) {
+        this.elements.forEach(product => {
+            amount = amount - product.element.price * product.quantity
+        });
+        return amount > 0;
+    };
 }
 
 let shoppingCart = new ShoppingCart();
