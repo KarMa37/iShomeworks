@@ -57,6 +57,13 @@ let balticCod = new Fish(2.28, 100);
 let salmon = new Fish(3.28, 100);
 
 // AD 2 - zaimplementuj function constructor dla shoppingCart
+function ShoppingCart() {
+    this.elements = [];
+    this.addProduct = function (element, quantity) {
+        this.elements.push({element, quantity});
+    };
+}
+
 let shoppingCart = new ShoppingCart();
 
 // AD 3
@@ -74,8 +81,8 @@ console.log('Is 100PLN enough?', shoppingCart.isEnoughMoney(100)); // true
 console.log('Total price of added products:', shoppingCart.getTotalPrice()); // 94.97
 console.log('Total weight of added products:', shoppingCart.getTotalWeight()); // 7700
 
-// AD 5
-console.log('Do I have a fish?', shoppingCart.containFish()); // true
-
-// AD 6
-console.log('How many plastic bags I need:', shoppingCart.getNumberOfNeededPlasticBags()); // 3
+// // AD 5
+// console.log('Do I have a fish?', shoppingCart.containFish()); // true
+//
+// // AD 6
+// console.log('How many plastic bags I need:', shoppingCart.getNumberOfNeededPlasticBags()); // 3
