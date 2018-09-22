@@ -59,6 +59,8 @@ let salmon = new Fish(3.28, 100);
 // AD 2 - zaimplementuj function constructor dla shoppingCart
 function ShoppingCart() {
     this.elements = [];
+    let price = 0;
+    let weight = 0;
     this.addProduct = function (element, quantity) {
         this.elements.push({element, quantity});
     };
@@ -68,6 +70,18 @@ function ShoppingCart() {
         });
         return amount > 0;
     };
+    this.getTotalPrice = function () {
+        this.elements.forEach(product => {
+            price = price + product.element.price * product.quantity
+        });
+        return price.toFixed(2);
+    };
+    this.getTotalWeight = function () {
+        this.elements.forEach(product => {
+            weight = weight + product.element.weight * product.quantity
+        });
+        return weight.toFixed(0);
+    }
 }
 
 let shoppingCart = new ShoppingCart();
