@@ -81,6 +81,9 @@ function ShoppingCart() {
             weight = weight + product.element.weight * product.quantity
         });
         return weight.toFixed(0);
+    };
+    this.getNumberOfNeededPlasticBags = function () {
+        return Math.ceil(weight / PLASTIC_BAG_CAPACITY)
     }
 }
 
@@ -103,6 +106,6 @@ console.log('Total weight of added products:', shoppingCart.getTotalWeight()); /
 
 // // AD 5
 // console.log('Do I have a fish?', shoppingCart.containFish()); // true
-//
-// // AD 6
-// console.log('How many plastic bags I need:', shoppingCart.getNumberOfNeededPlasticBags()); // 3
+
+// AD 6
+console.log('How many plastic bags I need:', shoppingCart.getNumberOfNeededPlasticBags()); // 3
