@@ -31,7 +31,7 @@ class Players extends Component {
         const newPlayer = {
             id: maxId + 1,
             username: this.state.inputValue,
-            points: Math.floor(Math.random()*201)
+            points: Math.floor(Math.random() * 201)
         };
         this.setState({
             players: this.props.players.push(newPlayer),
@@ -42,6 +42,15 @@ class Players extends Component {
     onChange = event => {
         this.setState({
             inputValue: event.target.value
+        })
+    };
+
+    removePlayer = id => {
+        const newPlayers = this.props.players.filter(player => {
+            return player.id !== id
+        });
+        this.setState({
+            players: newPlayers
         })
     };
 
@@ -68,7 +77,8 @@ class Players extends Component {
                 {this.props.players.map(player => {
                     return <PlayerRow player={player}
                                       className={player.points > 100 ? this.state.highlightingColor : ''}
-                                      key={player.id}/>
+                                      key={player.id}
+                                      onRemove={this.removePlayer}/>
                 })}
 
                 <tr>

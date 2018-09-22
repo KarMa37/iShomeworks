@@ -58,7 +58,7 @@ Termin wykonania: **23.09.2018**
    
    Wykorzystaj `props` by przesłać informacje o usuniętym graczu do komponentu `Players`.
    
-   * dodaj nowy props do PlayerRow: `<PlayerRow onRemove={this.removePlayer}`
+   * dodaj nowy props do Players: `<PlayerRow onRemove={this.removePlayer}`
    * dodaj obsługę wyżej dodanej funkcji w Players: `removePlayer = id => { ..... }`
    * dodaj obslugę kliknięcia przycisku w PlayerRow: `onRemoveButtonClick = (id) => {this.props.onRemove(id)`
    
