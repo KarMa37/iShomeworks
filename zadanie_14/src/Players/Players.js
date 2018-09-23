@@ -5,6 +5,7 @@ class Players extends Component {
 
     state = {
         highlightingColor: "",
+        players: this.props.players
     };
 
     redColor = () => {
@@ -46,7 +47,7 @@ class Players extends Component {
     };
 
     removePlayer = id => {
-        const newPlayers = this.props.players.filter(player => {
+        const newPlayers = this.state.players.filter(player => {
             return player.id !== id
         });
         this.setState({

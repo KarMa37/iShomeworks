@@ -2,8 +2,8 @@ import React, {Component, Fragment} from 'react';
 
 class PlayerRow extends Component {
 
-    onRemoveButtonClick = id => {
-        this.props.onRemove(id)
+    onRemoveButtonClick = () => {
+        this.props.onRemove(this.props.id)
     };
 
     render() {
@@ -12,7 +12,7 @@ class PlayerRow extends Component {
             <tr className={this.props.className}>
                 <td>{player.username}</td>
                 <td>{player.points}</td>
-                <button onClick={this.onRemoveButtonClick(player.id)}>x</button>
+                <button onClick={this.onRemoveButtonClick}>x</button>
             </tr>
         </Fragment>
     }
