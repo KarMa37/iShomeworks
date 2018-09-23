@@ -12,7 +12,9 @@ class PlayerRow extends Component {
             <tr className={this.props.className}>
                 <td>{player.username}</td>
                 <td>{player.points}</td>
-                <button onClick={this.onRemoveButtonClick(player.id)}>x</button>
+                <td>
+                <button onClick={() => this.onRemoveButtonClick(player.id)}>x</button>
+                </td>
             </tr>
         </Fragment>
     }

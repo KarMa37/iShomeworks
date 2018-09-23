@@ -31,8 +31,9 @@
     document.getElementById("btn").addEventListener("click", modifyText);
     document.getElementById("btn").addEventListener("dblclick", addNewDiv);
 
-    document.getElementsByClassName("button").innerHTML = "true btn";
-    document.querySelectorAll("button").innerHTML = "really true btn";
+    document.getElementsByClassName("button")[0].innerHTML = "true btn";
+    document.querySelectorAll("button")[0].innerHTML = "really true btn";
+    //TODO tutaj brakuje wyboru elemntu, to są listy
 
     document.getElementById("box3").classList.add("someClass");
     document.getElementById("btn").classList.remove("button");

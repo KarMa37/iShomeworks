@@ -69,6 +69,7 @@ function ShoppingCart() {
         this.elements.forEach(product => {
             amount = amount - product.element.price * product.quantity
         });
+        //TODO tutaj można użyc .getTotalPrice
         return amount > 0;
     };
     this.getTotalPrice = function () {

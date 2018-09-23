@@ -5,7 +5,14 @@ class Players extends Component {
 
     state = {
         highlightingColor: "",
+        players: []
     };
+
+    componentWillReceiveProps(nextProps) {
+        this.setState({
+          players: nextProps.players
+        })
+    }
 
     redColor = () => {
         this.setState({
@@ -27,14 +34,14 @@ class Players extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        const maxId = Math.max.apply(Math, this.props.players.map(player => player.id));
+        const maxId = Math.max.apply(Math, this.state.players.map(player => player.id));
         const newPlayer = {
             id: maxId + 1,
             username: this.state.inputValue,
             points: Math.floor(Math.random() * 201)
         };
         this.setState({
-            players: this.props.players.push(newPlayer),
+            players: [...this.state.players, newPlayer],
             inputValue: ""
         })
     };
@@ -46,7 +53,7 @@ class Players extends Component {
     };
 
     removePlayer = id => {
-        const newPlayers = this.props.players.filter(player => {
+        const newPlayers = this.state.players.filter(player => {
             return player.id !== id
         });
         this.setState({
@@ -74,7 +81,7 @@ class Players extends Component {
                 </tr>
                 </thead>
                 <tbody>
-                {this.props.players.map(player => {
+                {this.state.players.map(player => {
                     return <PlayerRow player={player}
                                       className={player.points > 100 ? this.state.highlightingColor : ''}
                                       key={player.id}
@@ -83,15 +90,15 @@ class Players extends Component {
 
                 <tr>
                     <th>Total</th>
-                    <th>{this.props.players.reduce((prev, next) => {
+                    <th>{this.state.players.reduce((prev, next) => {
                         return prev + next.points
                     }, 0)}</th>
                 </tr>
                 <tr>
                     <th>Average</th>
-                    <th>{Math.round(this.props.players.reduce((prev, next) => {
+                    <th>{this.state.players.length > 0 ?  Math.round(this.state.players.reduce((prev, next) => {
                         return prev + next.points
-                    }, 0) / this.props.players.length)}</th>
+                    }, 0) / this.state.players.length) : 0}</th>
                 </tr>
                 </tbody>
             </table>
