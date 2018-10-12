@@ -66,10 +66,12 @@ function ShoppingCart() {
         this.elements.push({element, quantity});
     };
     this.isEnoughMoney = function (amount) {
-        this.elements.forEach(product => {
-            amount = amount - product.element.price * product.quantity
-        });
-        return amount > 0;
+        return this.elements.reduce((prev, next) => prev - next.element.price * next.quantity, amount) > 0;
+        // this.elements.forEach(product => {
+        //     amount = amount - product.element.price * product.quantity
+        // });
+        // //TODO tutaj można użyc .getTotalPrice
+        // return amount > 0;
     };
     this.getTotalPrice = function () {
         this.elements.forEach(product => {

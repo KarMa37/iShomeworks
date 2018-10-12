@@ -3,16 +3,15 @@ import './App.css';
 import Players from './Players';
 
 class App extends Component {
-
     state = {
-        players: [],
+        players: []
     };
 
-    componentDidMount() {
+      componentDidMount() {
         fetch('/data/players.json')
-            .then(response => response.json())
-            .then(players => this.setState({players}));
-    };
+          .then(response => response.json())
+          .then(players => this.setState({players}));
+      };
 
     render() {
         return <Fragment>
